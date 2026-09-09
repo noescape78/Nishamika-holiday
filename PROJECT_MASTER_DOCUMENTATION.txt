@@ -32,6 +32,7 @@ TABLE OF CONTENTS
   * "New Places, New Stories, Same You"
   * "Travel More, Worry Less"
 - BUSINESS DOMAIN: Ultra-luxury, bespoke, and personalized international travel curations.
+- OFFICIAL GITHUB REPOSITORY: https://github.com/noescape78/Nishamika-holiday
 - TARGET DESTINATIONS:
   * Malaysia (Kuala Lumpur, Langkawi, Penang)
   * Thailand (Bangkok, Phuket, Krabi)
