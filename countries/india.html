@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Explore India — Destinations & Experiences | Nishamika Holiday</title>
+  <meta name="description" content="Discover incredible destinations across India with Nishamika Holiday. Curated luxury journeys across Varanasi, Rajasthan, Kerala, and Agra." />
+  
+  <!-- Google Fonts: Playfair Display, Plus Jakarta Sans, Caveat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="../styles.css" />
+  <style>
+    .country-hero {
+      position: relative;
+      min-height: 480px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 8rem 1.5rem 4rem;
+      background: linear-gradient(180deg, rgba(4, 14, 23, 0.7) 0%, rgba(7, 26, 43, 0.92) 100%), url('../assets/india.png') center/cover no-repeat;
+      border-bottom: 1px solid rgba(226, 192, 130, 0.25);
+    }
+    .country-hero-content {
+      max-width: 800px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 2;
+    }
+    .country-title {
+      font-family: var(--font-serif);
+      font-size: clamp(2.5rem, 6vw, 4.2rem);
+      font-weight: 700;
+      color: #ffffff;
+      margin: 0.5rem 0 1rem;
+      letter-spacing: 0.03em;
+    }
+    .country-subtitle {
+      font-size: 1.1rem;
+      color: rgba(255, 255, 255, 0.85);
+      line-height: 1.6;
+    }
+    .destinations-grid-section {
+      padding: 6rem 0;
+      background: #ffffff;
+    }
+    .destinations-grid-section .section-title {
+      color: #071a2b;
+    }
+    .destinations-grid-section .section-subtitle {
+      color: #64748b;
+    }
+    .sub-dest-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2.2rem;
+      margin-top: 3.5rem;
+    }
+    .sub-dest-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+      border-radius: 22px;
+      padding: 2.2rem;
+      transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .sub-dest-card:hover {
+      transform: translateY(-6px);
+      border-color: #b8860b;
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.08);
+    }
+    .sub-dest-badge {
+      font-size: 0.75rem;
+      color: #b8860b;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 0.6rem;
+    }
+    .sub-dest-name {
+      font-family: var(--font-serif);
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: #071a2b;
+      margin-bottom: 0.85rem;
+    }
+    .sub-dest-desc {
+      font-size: 0.94rem;
+      color: #475569;
+      line-height: 1.65;
+      margin-bottom: 1.4rem;
+    }
+    .sub-dest-highlights {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .sub-dest-highlights span {
+      font-size: 0.75rem;
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      color: #1e293b;
+      font-weight: 500;
+      padding: 0.3rem 0.75rem;
+      border-radius: 9999px;
+    }
+    .back-home-banner {
+      background: #ffffff;
+      padding: 4rem 1.5rem;
+      text-align: center;
+      border-top: 1px solid #e2e8f0;
+    }
+    @media (max-width: 768px) {
+      .sub-dest-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header / Navbar -->
+  <header class="navbar-wrapper" style="position: absolute; top: 0; left: 0; right: 0;">
+    <nav class="navbar" aria-label="Main Navigation">
+      <a href="../index.html" class="brand-logo" aria-label="Nishamika Holiday Home">
+        <img src="../assets/logo.jpeg" alt="Nishamika Holiday Logo" class="brand-logo-img" />
+        <div class="brand-text">
+          <span class="brand-title">Nishamika</span>
+          <span class="brand-subtitle">HOLIDAY</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" id="desktopNavLinks">
+        <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="../index.html#popular-destinations" class="nav-link active">Destinations</a></li>
+        <li class="nav-item"><a href="../index.html#curated-experiences" class="nav-link">Experiences</a></li>
+        <li class="nav-item"><a href="../about.html" class="nav-link">About Founders</a></li>
+        <li class="nav-item"><a href="../index.html#trust-features" class="nav-link">Why Us</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="../index.html" class="cta-pill-btn">
+          <span>← Back to Home</span>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Country Hero -->
+  <section class="country-hero">
+    <div class="country-hero-content">
+      <p class="section-eyebrow">— &nbsp; INCREDIBLE HERITAGE &nbsp; —</p>
+      <h1 class="country-title">Explore <span class="accent-dest">India</span></h1>
+      <p class="country-subtitle">
+        A land of timeless spiritual traditions, regal palaces, serene backwaters, and monumental architectural marvels. Handcrafted private journeys by Nishamika Holiday.
+      </p>
+    </div>
+  </section>
+
+  <!-- ======================================================================= -->
+  <!-- 📍 INDIA SUB-DESTINATIONS (AAP YAHAN SE CITIES/DESTINATIONS EASILY ADD/CHANGE KAR SAKTE HAIN) -->
+  <!-- ======================================================================= -->
+  <section class="destinations-grid-section">
+    <div class="section-container">
+      <header class="section-header text-center">
+        <p class="section-eyebrow">— &nbsp; HANDPICKED DESTINATIONS &nbsp; —</p>
+        <h2 class="section-title">Iconic Places to Visit in <span class="accent-dest">India</span></h2>
+        <p class="section-subtitle">
+          Personalized private journeys curated with vetted luxury hotels and verified local guides.
+        </p>
+      </header>
+
+      <div class="sub-dest-grid">
+        
+        <!-- Destination 1: Varanasi -->
+        <article class="sub-dest-card">
+          <div>
+            <span class="sub-dest-badge">Spiritual & Cultural Capital</span>
+            <h3 class="sub-dest-name">Varanasi</h3>
+            <p class="sub-dest-desc">
+              Experience the ancient heartbeat of India along the sacred Ganges. Witness evening Ganga Aarti ceremonies by private boat, historic ghat walks, and centuries-old silk weaving traditions.
+            </p>
+            <div class="sub-dest-highlights">
+              <span>Private Boat Aarti</span>
+              <span>Kashi Vishwanath</span>
+              <span>Heritage Ghats Walk</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Destination 2: Jaipur & Rajasthan -->
+        <article class="sub-dest-card">
+          <div>
+            <span class="sub-dest-badge">Royal Fortresses & Palaces</span>
+            <h3 class="sub-dest-name">Jaipur &amp; Rajasthan</h3>
+            <p class="sub-dest-desc">
+              The Pink City and beyond—Amber Fort, opulent royal palace stays, vibrant textile bazaars, and golden desert sunsets in Jaisalmer and Udaipur.
+            </p>
+            <div class="sub-dest-highlights">
+              <span>Palace Stays</span>
+              <span>Amber Fort</span>
+              <span>Desert Sundowner</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Destination 3: Kerala -->
+        <article class="sub-dest-card">
+          <div>
+            <span class="sub-dest-badge">God’s Own Country</span>
+            <h3 class="sub-dest-name">Kerala Backwaters</h3>
+            <p class="sub-dest-desc">
+              Glide through tranquil emerald waterways on a luxury private houseboat, unwind with authentic Ayurvedic wellness treatments, and wander through misty tea estates in Munnar.
+            </p>
+            <div class="sub-dest-highlights">
+              <span>Luxury Houseboat</span>
+              <span>Ayurveda Wellness</span>
+              <span>Munnar Tea Gardens</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Destination 4: Agra -->
+        <article class="sub-dest-card">
+          <div>
+            <span class="sub-dest-badge">Monument of Eternal Love</span>
+            <h3 class="sub-dest-name">Agra &amp; The Taj Mahal</h3>
+            <p class="sub-dest-desc">
+              Witness the ethereal sunrise over the Taj Mahal, explore the majestic red sandstone ramparts of Agra Fort, and discover the forgotten Mughal capital of Fatehpur Sikri.
+            </p>
+            <div class="sub-dest-highlights">
+              <span>Sunrise Taj Mahal</span>
+              <span>Agra Fort</span>
+              <span>Mughal Architecture</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Banner Back To Home -->
+  <section class="back-home-banner">
+    <div class="section-container">
+      <h3 style="font-family: var(--font-serif); font-size: 1.8rem; margin-bottom: 0.8rem; color: #071a2b;">
+        Ready to Plan Your Journey to India?
+      </h3>
+      <p style="color: #64748b; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+        Customized itineraries personally supervised by Abhishek Kumar Srivastava, Anamika Gupta &amp; Arun Shrivastava at Nishamika Holiday.
+      </p>
+      <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+        <a href="https://wa.me/919389892213?text=Hello%20Nishamika%20Holiday!%20I%20am%20interested%20in%20planning%20a%20private%20tour%20to%20*India*%20(Varanasi%2C%20Rajasthan%2C%20Agra).%20Please%20share%20details." target="_blank" rel="noopener noreferrer" class="cta-pill-btn" style="display: inline-flex; background: #2563eb; color: #ffffff; border-color: #2563eb;">
+          <span>Plan India Tour on WhatsApp ↗</span>
+        </a>
+        <a href="../index.html" class="cta-pill-btn" style="display: inline-flex;">
+          <span>← Return to Home Page</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Grand Luxury Footer -->
+  <footer class="luxury-footer" id="footer">
+    <div class="section-container">
+      <div class="footer-main-grid">
+        <div class="footer-col footer-brand-col">
+          <div class="footer-brand-header">
+            <img src="../assets/logo.jpeg" alt="Nishamika Holiday Logo" class="footer-logo-img" />
+            <div class="brand-text">
+              <span class="brand-title">Nishamika</span>
+              <span class="brand-subtitle">HOLIDAY</span>
+            </div>
+          </div>
+          <p class="footer-tagline">
+            Curating luxury international getaways and timeless cultural expeditions with dedicated personal attention.
+          </p>
+          <div class="footer-founder-badge">
+            <span>Founders: <strong>Abhishek, Anamika &amp; Arun</strong></span>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Featured Countries</h4>
+          <ul class="footer-links">
+            <li><a href="../index.html#popular-destinations">Malaysia</a></li>
+            <li><a href="../index.html#popular-destinations">Thailand</a></li>
+            <li><a href="../index.html#popular-destinations">Vietnam</a></li>
+            <li><a href="india.html">India</a></li>
+            <li><a href="../index.html#popular-destinations">Nepal</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Quick Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html#popular-destinations">Destinations</a></li>
+            <li><a href="../index.html#curated-experiences">Travel Experiences</a></li>
+            <li><a href="../about.html">About Founders</a></li>
+            <li><a href="../index.html#trust-features">Why Nishamika</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-consult-col">
+          <h4 class="footer-col-title">Personalized Travel</h4>
+          <p class="footer-consult-text">
+            Every holiday is crafted individually. No automated algorithms—custom planning directed by Abhishek Kumar Srivastava, Anamika Gupta &amp; Arun Shrivastava.
+          </p>
+          <div class="footer-assurance-box">
+            <span class="assurance-icon">✨</span>
+            <span>Private &amp; Custom Tours</span>
+          </div>
+          <div class="footer-timing">
+            <small>Consultation Hours: Mon – Sat (10:00 AM – 8:00 PM)</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-strip">
+        <p class="copyright-text">
+          &copy; 2026 <strong>Nishamika Holiday</strong>. All rights reserved. Directed by Abhishek Kumar Srivastava, Anamika Gupta &amp; Arun Shrivastava.
+        </p>
+        <div class="footer-bottom-links">
+          <a href="../index.html">Back to Home ↑</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+

@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Nishamika Holiday — The World Awaits You | Luxury Travel</title>
+  <meta name="description" content="Nishamika Holiday - Curated international journeys across Malaysia, Thailand, Vietnam, India, and Nepal. Founded by Abhishek Kumar Srivastava, Anamika Gupta &amp; Arun Shrivastava." />
+  
+  <!-- Google Fonts: Playfair Display (Editorial/Serif), Plus Jakarta Sans (UI/Body), Caveat (Handwritten Script) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- =========================================================================
+       1. HERO SECTION (Cinematic Hero Landing)
+       ========================================================================= -->
+  <section class="hero-container" id="hero">
+    
+    <!-- Background Image Layer (USE.png) -->
+    <div class="hero-bg" aria-hidden="true"></div>
+    
+    <!-- Atmospheric Contrast Overlays -->
+    <div class="hero-overlay-top" aria-hidden="true"></div>
+    <div class="hero-overlay-bottom" aria-hidden="true"></div>
+    <div class="hero-vignette" aria-hidden="true"></div>
+
+    <!-- Transparent Glass Navbar -->
+    <header class="navbar-wrapper">
+      <nav class="navbar" aria-label="Main Navigation">
+        
+        <!-- Brand Logo -->
+        <a href="#hero" class="brand-logo" aria-label="Nishamika Holiday Home">
+          <img src="assets/logo.jpeg" alt="Nishamika Holiday Logo" class="brand-logo-img" />
+          <div class="brand-text">
+            <span class="brand-title">Nishamika</span>
+            <span class="brand-subtitle">HOLIDAY</span>
+          </div>
+          <div class="brand-symbol" aria-hidden="true">
+            <svg class="flight-svg" viewBox="0 0 36 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 17C10 16 16 11 26 4" stroke="currentColor" stroke-width="1.4" stroke-dasharray="2 2" stroke-linecap="round"/>
+              <path d="M25 4L32 2L28 9L25.5 6L21 7.5L25 4Z" fill="currentColor"/>
+            </svg>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <ul class="nav-links" id="desktopNavLinks">
+          <li class="nav-item"><a href="#hero" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#popular-destinations" class="nav-link">Destinations</a></li>
+          <li class="nav-item"><a href="#curated-experiences" class="nav-link">Experiences</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About Founders</a></li>
+          <li class="nav-item"><a href="#trust-features" class="nav-link">Why Us</a></li>
+        </ul>
+
+        <!-- Right-side Actions -->
+        <div class="nav-actions">
+          <button type="button" class="icon-btn search-trigger" aria-label="Search Website" id="quickSearchBtn">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+
+          <a href="#popular-destinations" class="cta-pill-btn">
+            <span>Explore Destinations</span>
+            <span class="cta-arrow" aria-hidden="true">↓</span>
+          </a>
+
+          <!-- Mobile Hamburger Toggle -->
+          <button type="button" class="mobile-hamburger" id="hamburgerBtn" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="mobileDrawer">
+            <span class="ham-bar"></span>
+            <span class="ham-bar"></span>
+          </button>
+        </div>
+
+      </nav>
+    </header>
+
+    <!-- Mobile Drawer Overlay -->
+    <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+      <div class="mobile-drawer-inner">
+        <div class="drawer-header">
+          <div class="drawer-brand-wrap">
+            <img src="assets/logo.jpeg" alt="Nishamika Holiday Logo" class="brand-logo-img" />
+            <div class="brand-text">
+              <span class="brand-title">Nishamika</span>
+              <span class="brand-subtitle">HOLIDAY</span>
+            </div>
+          </div>
+          <button type="button" class="drawer-close" id="drawerCloseBtn" aria-label="Close Navigation Menu">&times;</button>
+        </div>
+        <ul class="mobile-nav-links">
+          <li><a href="#hero" class="mobile-nav-link active">Home</a></li>
+          <li><a href="#popular-destinations" class="mobile-nav-link">Top Destinations</a></li>
+          <li><a href="#curated-experiences" class="mobile-nav-link">Experiences</a></li>
+          <li><a href="about.html" class="mobile-nav-link">About Founders</a></li>
+          <li><a href="#trust-features" class="mobile-nav-link">Why Nishamika</a></li>
+        </ul>
+        <div class="mobile-drawer-cta">
+          <a href="#popular-destinations" class="cta-pill-btn full-width">
+            <span>Explore Destinations →</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Upper-Middle Hero Content -->
+    <main class="hero-content">
+      
+      <!-- Eyebrow text -->
+      <p class="hero-eyebrow animate-fade-in">
+        <span>E X P L O R E</span>
+        <span class="bullet">•</span>
+        <span>D I S C O V E R</span>
+        <span class="bullet">•</span>
+        <span>B E L O N G</span>
+      </p>
+
+      <!-- Main Headline -->
+      <h1 class="hero-headline animate-rise">
+        The <span class="accent-word">World</span> Awaits You
+      </h1>
+
+      <!-- Description -->
+      <p class="hero-description animate-fade-in-delayed">
+        Discover breathtaking destinations, unforgettable experiences<br class="desktop-break" />
+        and journeys that stay with you forever.
+      </p>
+
+      <!-- Floating Glass Search Bar -->
+      <div class="search-bar-container animate-rise-delayed">
+        <div class="search-bar-pill" role="search">
+          
+          <!-- Field 1: Destination -->
+          <div class="search-field" id="destField" tabindex="0" role="button" aria-haspopup="listbox" aria-expanded="false">
+            <span class="field-icon">📍</span>
+            <div class="field-info">
+              <span class="field-label">Where to?</span>
+              <span class="field-value" id="selectedDestText">Explore Destinations</span>
+            </div>
+            <span class="field-dropdown-icon">▾</span>
+
+            <!-- Dropdown Popover -->
+            <div class="search-dropdown-popover" id="destDropdown" role="listbox">
+              <div class="dropdown-item" data-value="Malaysia">
+                <span class="dropdown-icon">🏙️</span>
+                <div>
+                  <strong>Malaysia</strong>
+                  <small>Modern Cities, Timeless Beauty</small>
+                </div>
+              </div>
+              <div class="dropdown-item" data-value="Thailand">
+                <span class="dropdown-icon">🛕</span>
+                <div>
+                  <strong>Thailand</strong>
+                  <small>Land of Smiles</small>
+                </div>
+              </div>
+              <div class="dropdown-item" data-value="Vietnam">
+                <span class="dropdown-icon">⛵</span>
+                <div>
+                  <strong>Vietnam</strong>
+                  <small>Nature’s Masterpiece</small>
+                </div>
+              </div>
+              <div class="dropdown-item" data-value="India">
+                <span class="dropdown-icon">🕌</span>
+                <div>
+                  <strong>India</strong>
+                  <small>Incredible Heritage</small>
+                </div>
+              </div>
+              <div class="dropdown-item" data-value="Nepal">
+                <span class="dropdown-icon">🏔️</span>
+                <div>
+                  <strong>Nepal</strong>
+                  <small>Land of the Himalayas</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="field-separator" aria-hidden="true"></div>
+
+          <!-- Field 2: Date / When -->
+          <div class="search-field" id="dateField" tabindex="0" role="button" aria-haspopup="dialog" aria-expanded="false">
+            <span class="field-icon">📅</span>
+            <div class="field-info">
+              <span class="field-label">When?</span>
+              <span class="field-value" id="selectedDateText">Select Dates</span>
+            </div>
+            <span class="field-dropdown-icon">▾</span>
+
+            <div class="search-dropdown-popover date-popover" id="dateDropdown">
+              <div class="popover-title">Choose Travel Season</div>
+              <div class="date-chips">
+                <button type="button" class="date-chip active">Autumn 2026</button>
+                <button type="button" class="date-chip">Winter Getaways</button>
+                <button type="button" class="date-chip">Spring 2027</button>
+                <button type="button" class="date-chip">Flexible Dates</button>
+              </div>
+              <div class="month-selector">
+                <span class="month-opt" data-month="October">Oct</span>
+                <span class="month-opt" data-month="November">Nov</span>
+                <span class="month-opt" data-month="December">Dec</span>
+                <span class="month-opt" data-month="January">Jan</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="field-separator" aria-hidden="true"></div>
+
+          <!-- Field 3: Travelers -->
+          <div class="search-field" id="travelerField" tabindex="0" role="button" aria-haspopup="dialog" aria-expanded="false">
+            <span class="field-icon">👤</span>
+            <div class="field-info">
+              <span class="field-label">Travelers</span>
+              <span class="field-value" id="selectedTravelerText">2 Guests</span>
+            </div>
+            <span class="field-dropdown-icon">▾</span>
+
+            <div class="search-dropdown-popover guests-popover" id="travelerDropdown">
+              <div class="guest-row">
+                <div class="guest-desc">
+                  <span class="guest-type">Adults</span>
+                  <span class="guest-sub">Age 13+</span>
+                </div>
+                <div class="guest-counter">
+                  <button type="button" class="counter-btn minus" data-type="adults">−</button>
+                  <span class="counter-val" id="adultCount">2</span>
+                  <button type="button" class="counter-btn plus" data-type="adults">+</button>
+                </div>
+              </div>
+              <div class="guest-row">
+                <div class="guest-desc">
+                  <span class="guest-type">Children</span>
+                  <span class="guest-sub">Ages 0–12</span>
+                </div>
+                <div class="guest-counter">
+                  <button type="button" class="counter-btn minus" data-type="children">−</button>
+                  <span class="counter-val" id="childCount">0</span>
+                  <button type="button" class="counter-btn plus" data-type="children">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="field-separator" aria-hidden="true"></div>
+
+          <!-- Field 4: Search Button -->
+          <div class="search-button-wrapper">
+            <button type="button" class="search-submit-btn" id="searchSubmitBtn" aria-label="Search Trips">
+              <span class="search-icon-svg" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+              </span>
+              <span>Search</span>
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+    </main>
+
+    <!-- Right-Side Script Message -->
+    <aside class="right-travel-script" aria-label="Inspirational quote">
+      <div class="script-card">
+        <span class="script-line line-1">Good</span>
+        <span class="script-line line-2">Places</span>
+        <span class="script-line line-3">Brighter</span>
+        <span class="script-line line-4">People</span>
+      </div>
+    </aside>
+
+    <!-- Destination Panels Overlay (Aligned over USE.png landmark columns) -->
+    <div class="destination-overlays-container" aria-label="Featured Destinations">
+      
+      <article class="dest-panel-card panel-malaysia" tabindex="0">
+        <div class="dest-card-backdrop"></div>
+        <div class="dest-card-content">
+          <h2 class="dest-title">MALAYSIA</h2>
+          <p class="dest-subtitle">Modern Cities, Timeless Beauty</p>
+          <div class="dest-line" aria-hidden="true"></div>
+        </div>
+      </article>
+
+      <article class="dest-panel-card panel-thailand" tabindex="0">
+        <div class="dest-card-backdrop"></div>
+        <div class="dest-card-content">
+          <h2 class="dest-title">THAILAND</h2>
+          <p class="dest-subtitle">Land of Smiles</p>
+          <div class="dest-line" aria-hidden="true"></div>
+        </div>
+      </article>
+
+      <article class="dest-panel-card panel-vietnam" tabindex="0">
+        <div class="dest-card-backdrop"></div>
+        <div class="dest-card-content">
+          <h2 class="dest-title">VIETNAM</h2>
+          <p class="dest-subtitle">Nature’s Masterpiece</p>
+          <div class="dest-line" aria-hidden="true"></div>
+        </div>
+      </article>
+
+      <article class="dest-panel-card panel-india" tabindex="0">
+        <div class="dest-card-backdrop"></div>
+        <div class="dest-card-content">
+          <h2 class="dest-title">INDIA</h2>
+          <p class="dest-subtitle">Incredible Heritage</p>
+          <div class="dest-line" aria-hidden="true"></div>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- Bottom Glass Information Bar -->
+    <footer class="bottom-glass-bar-wrapper">
+      <div class="bottom-glass-bar">
+        
+        <div class="feature-col">
+          <span class="feature-glyph">✈</span>
+          <div class="feature-text">
+            <strong>Handpicked</strong>
+            <span>Destinations</span>
+          </div>
+        </div>
+
+        <div class="feature-divider" aria-hidden="true"></div>
+
+        <div class="feature-col">
+          <span class="feature-glyph">▣</span>
+          <div class="feature-text">
+            <strong>Best Travel</strong>
+            <span>Packages</span>
+          </div>
+        </div>
+
+        <div class="feature-divider" aria-hidden="true"></div>
+
+        <div class="feature-col">
+          <span class="feature-glyph">♧</span>
+          <div class="feature-text">
+            <strong>Trusted by</strong>
+            <span>Happy Travelers</span>
+          </div>
+        </div>
+
+        <div class="feature-divider" aria-hidden="true"></div>
+
+        <div class="feature-col">
+          <span class="feature-glyph">♡</span>
+          <div class="feature-text">
+            <strong>Safe & Hassle-Free</strong>
+            <span>Journeys</span>
+          </div>
+        </div>
+
+        <div class="feature-divider" aria-hidden="true"></div>
+
+        <div class="feature-cta-col">
+          <a href="#popular-destinations" class="explore-link">
+            <span>EXPLORE THE WORLD</span>
+            <span class="explore-arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+
+      </div>
+    </footer>
+
+  </section>
+
+
+  <!-- =========================================================================
+       2. POPULAR DESTINATIONS & TRUST STRIP SECTION (USING USE2.png)
+       ========================================================================= -->
+  <section class="popular-destinations-section" id="popular-destinations">
+    
+    <!-- Background Image Layer (USE2.png) -->
+    <div class="destinations-bg" aria-hidden="true"></div>
+    <div class="destinations-lighting-overlay" aria-hidden="true"></div>
+
+    <div class="section-container">
+
+      <!-- DECORATIVE ELEMENTS (Airplane trail, handwritten quotes) -->
+      <div class="section-decorations" aria-hidden="true">
+        
+        <!-- Left Decorative Script & Flight Illustration -->
+        <div class="decor-left">
+          <div class="decor-script-wrap">
+            <span class="decor-script-line">New Places</span>
+            <span class="decor-script-line">New Stories</span>
+            <span class="decor-script-line accent-line">Same You</span>
+            <svg class="decor-curve-svg" viewBox="0 0 110 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 10C35 4 75 14 108 3" stroke="#2b527a" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Right Decorative Script -->
+        <div class="decor-right">
+          <div class="decor-script-wrap right-align">
+            <span class="decor-script-line">Travel</span>
+            <span class="decor-script-line">More</span>
+            <span class="decor-script-line accent-line">Worry Less</span>
+            <svg class="decor-curve-svg" viewBox="0 0 120 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 12C45 3 85 15 116 5" stroke="#2b527a" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- SECTION HEADER -->
+      <header class="section-header text-center reveal-on-scroll">
+        <p class="section-eyebrow">— &nbsp; TOP DESTINATIONS &nbsp; —</p>
+        <h2 class="section-title">
+          Explore Our Popular <span class="accent-dest">Destinations</span>
+        </h2>
+        <p class="section-subtitle">
+          Handpicked destinations for unforgettable journeys. Discover unique cultures,
+          stunning landscapes, and life-changing experiences.
+        </p>
+      </header>
+
+      <!-- 5 DESTINATION CARDS (Desktop 1 Row / Mobile Swipe Carousel) -->
+      <div class="dest-cards-carousel-wrapper">
+        <div class="dest-cards-row" role="region" aria-label="Popular Destinations List">
+          
+          <!-- Card 1: Malaysia -->
+          <article class="dest-card-box reveal-on-scroll" data-dest="Malaysia" tabindex="0">
+            <div class="dest-card-inner">
+              <div class="dest-card-img-wrap">
+                <img src="assets/card_malaysia.png" alt="Malaysia Petronas Towers" class="dest-card-img" loading="lazy" />
+              </div>
+              <div class="dest-card-gradient"></div>
+              <div class="dest-card-info">
+                <div class="dest-card-location">
+                  <span class="location-pin-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                  </span>
+                  <h3 class="dest-card-title">Malaysia</h3>
+                </div>
+                <p class="dest-card-subtitle">Modern Cities, Timeless Beauty</p>
+              </div>
+              <button type="button" class="dest-card-arrow" aria-label="Explore Malaysia">
+                <span class="arrow-svg" aria-hidden="true">→</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Card 2: Thailand -->
+          <article class="dest-card-box reveal-on-scroll" data-dest="Thailand" tabindex="0">
+            <div class="dest-card-inner">
+              <div class="dest-card-img-wrap">
+                <img src="assets/card_thailand.png" alt="Thailand Wat Arun Bangkok" class="dest-card-img" loading="lazy" />
+              </div>
+              <div class="dest-card-gradient"></div>
+              <div class="dest-card-info">
+                <div class="dest-card-location">
+                  <span class="location-pin-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                  </span>
+                  <h3 class="dest-card-title">Thailand</h3>
+                </div>
+                <p class="dest-card-subtitle">Land of Smiles</p>
+              </div>
+              <button type="button" class="dest-card-arrow" aria-label="Explore Thailand">
+                <span class="arrow-svg" aria-hidden="true">→</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Card 3: Vietnam -->
+          <article class="dest-card-box reveal-on-scroll" data-dest="Vietnam" tabindex="0">
+            <div class="dest-card-inner">
+              <div class="dest-card-img-wrap">
+                <img src="assets/card_vietnam.png" alt="Vietnam Ha Long Bay" class="dest-card-img" loading="lazy" />
+              </div>
+              <div class="dest-card-gradient"></div>
+              <div class="dest-card-info">
+                <div class="dest-card-location">
+                  <span class="location-pin-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                  </span>
+                  <h3 class="dest-card-title">Vietnam</h3>
+                </div>
+                <p class="dest-card-subtitle">Nature’s Masterpiece</p>
+              </div>
+              <button type="button" class="dest-card-arrow" aria-label="Explore Vietnam">
+                <span class="arrow-svg" aria-hidden="true">→</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Card 4: India -->
+          <article class="dest-card-box reveal-on-scroll" data-dest="India" tabindex="0">
+            <div class="dest-card-inner">
+              <div class="dest-card-img-wrap">
+                <img src="assets/card_india.png" alt="India Taj Mahal and Heritage" class="dest-card-img" loading="lazy" />
+              </div>
+              <div class="dest-card-gradient"></div>
+              <div class="dest-card-info">
+                <div class="dest-card-location">
+                  <span class="location-pin-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                  </span>
+                  <h3 class="dest-card-title">India</h3>
+                </div>
+                <p class="dest-card-subtitle">Incredible Heritage</p>
+              </div>
+              <button type="button" class="dest-card-arrow" aria-label="Explore India">
+                <span class="arrow-svg" aria-hidden="true">→</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Card 5: Nepal -->
+          <article class="dest-card-box reveal-on-scroll" data-dest="Nepal" tabindex="0">
+            <div class="dest-card-inner">
+              <div class="dest-card-img-wrap">
+                <img src="assets/card_nepal.png" alt="Nepal Himalayas and Stupa" class="dest-card-img" loading="lazy" />
+              </div>
+              <div class="dest-card-gradient"></div>
+              <div class="dest-card-info">
+                <div class="dest-card-location">
+                  <span class="location-pin-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                  </span>
+                  <h3 class="dest-card-title">Nepal</h3>
+                </div>
+                <p class="dest-card-subtitle">Land of the Himalayas</p>
+              </div>
+              <button type="button" class="dest-card-arrow" aria-label="Explore Nepal">
+                <span class="arrow-svg" aria-hidden="true">→</span>
+              </button>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- TRUST / FEATURE STRIP -->
+      <div class="trust-feature-strip-wrapper reveal-on-scroll" id="trust-features">
+        <div class="trust-feature-strip">
+          
+          <!-- Feature 1 -->
+          <div class="trust-feature-item">
+            <div class="feature-icon-circle">
+              <!-- Compass / Explore Icon -->
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#08213D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+              </svg>
+            </div>
+            <div class="feature-content-wrap">
+              <h4 class="feature-item-heading">Curated Experiences</h4>
+              <p class="feature-item-desc">Only the best, handpicked for you</p>
+            </div>
+          </div>
+
+          <div class="trust-strip-divider" aria-hidden="true"></div>
+
+          <!-- Feature 2 -->
+          <div class="trust-feature-item">
+            <div class="feature-icon-circle">
+              <!-- Team / Guidance Icon -->
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#08213D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <div class="feature-content-wrap">
+              <h4 class="feature-item-heading">Personalized Guidance</h4>
+              <p class="feature-item-desc">Plan with experts, not algorithms</p>
+            </div>
+          </div>
+
+          <div class="trust-strip-divider" aria-hidden="true"></div>
+
+          <!-- Feature 3 -->
+          <div class="trust-feature-item">
+            <div class="feature-icon-circle">
+              <!-- Shield / Safe Icon -->
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#08213D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                <polyline points="9 12 11 14 15 10"></polyline>
+              </svg>
+            </div>
+            <div class="feature-content-wrap">
+              <h4 class="feature-item-heading">Safe &amp; Reliable</h4>
+              <p class="feature-item-desc">Your journey, our responsibility</p>
+            </div>
+          </div>
+
+          <div class="trust-strip-divider" aria-hidden="true"></div>
+
+          <!-- Feature 4 -->
+          <a href="https://wa.me/919389892213?text=Hello%20Nishamika%20Holiday!%20I%20am%20exploring%20your%20website%20and%20would%20like%20to%20plan%20a%20luxury%20customized%20holiday.%20Please%20guide%20me." target="_blank" rel="noopener noreferrer" class="trust-feature-item" style="text-decoration: none; color: inherit; cursor: pointer;">
+            <div class="feature-icon-circle">
+              <!-- Headset / Direct Support Icon -->
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#08213D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 18v-6a9 9 0 0 1 18 0v6"></path>
+                <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path>
+              </svg>
+            </div>
+            <div class="feature-content-wrap">
+              <h4 class="feature-item-heading">Direct Support</h4>
+              <p class="feature-item-desc">Chat with us on WhatsApp anytime</p>
+            </div>
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- =========================================================================
+       3. EXPANDING IMAGE ACCORDION: CURATED TRAVEL STYLES
+       ========================================================================= -->
+  <section class="curated-experiences-section" id="curated-experiences">
+    <!-- Panoramic Travel Background -->
+    <div class="curated-bg" aria-hidden="true"></div>
+    <div class="curated-overlay" aria-hidden="true"></div>
+
+    <div class="section-container">
+      <header class="section-header text-center reveal-on-scroll">
+        <p class="section-eyebrow">— &nbsp; TAILORED EXPERIENCES &nbsp; —</p>
+        <h2 class="section-title">
+          Crafted For Every Style of <span class="accent-dest">Travel</span>
+        </h2>
+        <p class="section-subtitle">
+          Whether you seek spiritual quietude, grand royal palaces, or vibrant island shores, 
+          hover or tap to explore our handcrafted journey styles.
+        </p>
+      </header>
+
+      <!-- Horizontal Expanding Accordion Container -->
+      <div class="expanding-accordion-wrapper">
+        <div class="expanding-accordion" role="region" aria-label="Travel Styles Accordion">
+          
+          <!-- Panel 1: Heritage & Imperial Wonders (Default Active) -->
+          <article class="accordion-panel active" tabindex="0" data-panel="1">
+            <div class="panel-bg" style="background-image: url('https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=1400&q=80');"></div>
+            <div class="panel-overlay"></div>
+            
+            <!-- Collapsed Label (Visible when panel is narrow) -->
+            <div class="panel-collapsed-title">
+              <span class="panel-num">01</span>
+              <span class="panel-vertical-text">Heritage &amp; Wonders</span>
+            </div>
+
+            <!-- Expanded Content -->
+            <div class="panel-content">
+              <span class="panel-tag">India • Vietnam</span>
+              <h3 class="panel-heading">Heritage &amp; Imperial Wonders</h3>
+              <p class="panel-desc">
+                Centuries of living culture, sacred riverside evening aartis, majestic royal fortresses, and timeless UNESCO world heritage monuments.
+              </p>
+              <div class="panel-tags-row">
+                <span>Varanasi</span>
+                <span>Rajasthan</span>
+                <span>Hue &amp; Hoi An</span>
+              </div>
+              <a href="#popular-destinations" class="panel-explore-btn">
+                <span>Explore Destinations</span>
+                <span class="btn-arr">→</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Panel 2: Tropical Island & Coastal Retreats -->
+          <article class="accordion-panel" tabindex="0" data-panel="2">
+            <div class="panel-bg" style="background-image: url('https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=1400&q=80');"></div>
+            <div class="panel-overlay"></div>
+            
+            <div class="panel-collapsed-title">
+              <span class="panel-num">02</span>
+              <span class="panel-vertical-text">Island &amp; Coastal Retreats</span>
+            </div>
+
+            <div class="panel-content">
+              <span class="panel-tag">Thailand • Malaysia</span>
+              <h3 class="panel-heading">Tropical Island &amp; Coastal Retreats</h3>
+              <p class="panel-desc">
+                Private longtail boat excursions, crystal turquoise lagoons, secluded white-sand shores, and magical sunset sailings.
+              </p>
+              <div class="panel-tags-row">
+                <span>Phuket</span>
+                <span>Langkawi</span>
+                <span>Krabi</span>
+              </div>
+              <a href="#popular-destinations" class="panel-explore-btn">
+                <span>Explore Destinations</span>
+                <span class="btn-arr">→</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Panel 3: Spiritual & Himalayan Sanctuaries -->
+          <article class="accordion-panel" tabindex="0" data-panel="3">
+            <div class="panel-bg" style="background-image: url('https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1400&q=80');"></div>
+            <div class="panel-overlay"></div>
+            
+            <div class="panel-collapsed-title">
+              <span class="panel-num">03</span>
+              <span class="panel-vertical-text">Himalayan Sanctuaries</span>
+            </div>
+
+            <div class="panel-content">
+              <span class="panel-tag">Nepal • North India</span>
+              <h3 class="panel-heading">Spiritual &amp; Himalayan Sanctuaries</h3>
+              <p class="panel-desc">
+                Ancient sacred Buddhist stupas, panoramic sunrise vistas over snow-crowned summits, and soul-rejuvenating peaceful valleys.
+              </p>
+              <div class="panel-tags-row">
+                <span>Kathmandu</span>
+                <span>Pokhara</span>
+                <span>Rishikesh</span>
+              </div>
+              <a href="#popular-destinations" class="panel-explore-btn">
+                <span>Explore Destinations</span>
+                <span class="btn-arr">→</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Panel 4: Modern Megacities & High Luxury -->
+          <article class="accordion-panel" tabindex="0" data-panel="4">
+            <div class="panel-bg" style="background-image: url('https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=1400&q=80');"></div>
+            <div class="panel-overlay"></div>
+            
+            <div class="panel-collapsed-title">
+              <span class="panel-num">04</span>
+              <span class="panel-vertical-text">Modern High Luxury</span>
+            </div>
+
+            <div class="panel-content">
+              <span class="panel-tag">Malaysia • Thailand</span>
+              <h3 class="panel-heading">Modern Megacities &amp; High Luxury</h3>
+              <p class="panel-desc">
+                Illuminated iconic skyscrapers, Michelin-starred fine dining, opulent boutique hotels, and electric night bazaars.
+              </p>
+              <div class="panel-tags-row">
+                <span>Kuala Lumpur</span>
+                <span>Bangkok</span>
+                <span>Penang</span>
+              </div>
+              <a href="#popular-destinations" class="panel-explore-btn">
+                <span>Explore Destinations</span>
+                <span class="btn-arr">→</span>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       4. TRAVELER STORIES / TESTIMONIALS SECTION
+       ========================================================================= -->
+  <section class="testimonials-section" id="testimonials">
+    <div class="section-container">
+      <header class="section-header text-center reveal-on-scroll">
+        <p class="section-eyebrow">— &nbsp; GUEST EXPERIENCES &nbsp; —</p>
+        <h2 class="section-title">
+          Stories From Our <span class="accent-dest">Discerning Travelers</span>
+        </h2>
+        <p class="section-subtitle">
+          Real feedback from travelers who experienced the personalized touch of Nishamika Holiday.
+        </p>
+      </header>
+
+      <div class="testimonials-grid">
+        
+        <!-- Review 1 -->
+        <article class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <blockquote class="testimonial-quote">
+            “Our Thailand and Vietnam tour was arranged with sheer perfection. Every hotel was exquisite, 
+            the private drivers were always punctual, and Abhishek &amp; the directors personally checked on our comfort throughout the trip.”
+          </blockquote>
+          <div class="testimonial-author">
+            <div class="author-avatar">AV</div>
+            <div>
+              <h4 class="author-name">Amit &amp; Neha Verma</h4>
+              <span class="author-location">Thailand & Vietnam Tour • New Delhi</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Review 2 -->
+        <article class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <blockquote class="testimonial-quote">
+            “Visiting Varanasi and Rajasthan was on our wishlist for years. Nishamika Holiday turned it into a royal 
+            experience. From private spiritual boat ceremonies to palace stays, everything was breathtaking.”
+          </blockquote>
+          <div class="testimonial-author">
+            <div class="author-avatar">SM</div>
+            <div>
+              <h4 class="author-name">Dr. S. Mukherjee</h4>
+              <span class="author-location">India Cultural Heritage • Kolkata</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Review 3 -->
+        <article class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <blockquote class="testimonial-quote">
+            “Booking with Nishamika Holiday was the best decision for our family vacation to Malaysia. 
+            No rushed tour groups, no generic packages—pure luxury tailored specifically for us.”
+          </blockquote>
+          <div class="testimonial-author">
+            <div class="author-avatar">PS</div>
+            <div>
+              <h4 class="author-name">Pooja &amp; Rajesh Singhania</h4>
+              <span class="author-location">Malaysia City & Nature • Mumbai</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Mobile Testimonials Carousel Pagination & Hint -->
+      <div class="testimonials-carousel-dots" id="testimonialsDots">
+        <button type="button" class="t-dot active" data-index="0" aria-label="Review 1"></button>
+        <button type="button" class="t-dot" data-index="1" aria-label="Review 2"></button>
+        <button type="button" class="t-dot" data-index="2" aria-label="Review 3"></button>
+      </div>
+      <p class="testimonials-swipe-hint">
+        <span>← Swipe to explore reviews →</span>
+      </p>
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       6. GRAND LUXURY FOOTER
+       ========================================================================= -->
+  <footer class="luxury-footer" id="footer">
+    <div class="section-container">
+      <div class="footer-main-grid">
+        
+        <!-- Col 1: Brand & Bio -->
+        <div class="footer-col footer-brand-col">
+          <div class="footer-brand-header">
+            <img src="assets/logo.jpeg" alt="Nishamika Holiday Logo" class="footer-logo-img" />
+            <div class="brand-text">
+              <span class="brand-title">Nishamika</span>
+              <span class="brand-subtitle">HOLIDAY</span>
+            </div>
+          </div>
+          <p class="footer-tagline">
+            Curating luxury international getaways and timeless cultural expeditions with dedicated personal attention.
+          </p>
+          <div class="footer-founder-badge">
+            <span>Founders: <strong>Abhishek, Anamika &amp; Arun</strong></span>
+          </div>
+        </div>
+
+        <!-- Col 2: Top Countries -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Featured Countries</h4>
+          <ul class="footer-links">
+            <li><a href="#popular-destinations">Malaysia</a></li>
+            <li><a href="#popular-destinations">Thailand</a></li>
+            <li><a href="#popular-destinations">Vietnam</a></li>
+            <li><a href="#popular-destinations">India</a></li>
+            <li><a href="#popular-destinations">Nepal</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Navigation -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Quick Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#popular-destinations">Destinations</a></li>
+            <li><a href="#curated-experiences">Travel Experiences</a></li>
+            <li><a href="about.html">About Founders</a></li>
+            <li><a href="#trust-features">Why Nishamika</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Personal Assurance -->
+        <div class="footer-col footer-consult-col">
+          <h4 class="footer-col-title">Personalized Travel</h4>
+          <p class="footer-consult-text">
+            Every holiday is crafted individually. No automated algorithms—custom planning directed by Abhishek Kumar Srivastava, Anamika Gupta &amp; Arun Shrivastava.
+          </p>
+          <div class="footer-assurance-box">
+            <span class="assurance-icon">✨</span>
+            <span>Private &amp; Custom Tours</span>
+          </div>
+          <div class="footer-timing">
+            <small>Consultation Hours: Mon – Sat (10:00 AM – 8:00 PM)</small>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Strip -->
+      <div class="footer-bottom-strip">
+        <p class="copyright-text">
+          &copy; 2026 <strong>Nishamika Holiday</strong>. All rights reserved. Directed by Abhishek Kumar Srivastava, Anamika Gupta &amp; Arun Shrivastava.
+        </p>
+        <div class="footer-bottom-links">
+          <a href="#hero">Back to Top ↑</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Quick Search Modal (triggered by quickSearchBtn) -->
+  <div class="quick-search-modal" id="quickSearchModal" aria-hidden="true">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3>Find Your Destination</h3>
+        <button type="button" class="modal-close" id="modalCloseBtn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <input type="text" placeholder="Search Malaysia, Thailand, Vietnam, India, Nepal..." class="modal-input" id="modalSearchInput" />
+        <div class="modal-tags">
+          <span class="quick-tag" data-tag="Malaysia">Malaysia</span>
+          <span class="quick-tag" data-tag="Thailand">Thailand</span>
+          <span class="quick-tag" data-tag="Vietnam">Vietnam</span>
+          <span class="quick-tag" data-tag="India">India</span>
+          <span class="quick-tag" data-tag="Nepal">Nepal</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

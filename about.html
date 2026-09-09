@@ -1,0 +1,1360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>About Nishamika Holiday — Leadership & Founders</title>
+  <meta name="description" content="Discover the story, vision, and bespoke travel philosophy of Nishamika Holiday, led by Abhishek Kumar Srivastava, Anamika Gupta &amp; Arun Shrivastava. Handcrafted international journeys." />
+  
+  <!-- Google Fonts: Playfair Display, Plus Jakarta Sans, Caveat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      background-color: #ffffff;
+      color: #071a2b;
+      overflow-x: hidden;
+    }
+    
+    /* Header & Navbar for About Page */
+    .about-header {
+      width: 100%;
+      padding: 1.2rem 2rem 0;
+      background: #ffffff;
+    }
+    .about-header .navbar {
+      background: rgba(255, 255, 255, 0.95) !important;
+      border: 1px solid #e2e8f0 !important;
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05) !important;
+    }
+    .about-header .brand-title {
+      color: #071a2b !important;
+    }
+    .about-header .nav-link {
+      color: #334155 !important;
+    }
+    .about-header .nav-link:hover, 
+    .about-header .nav-link.active {
+      color: #1d4ed8 !important;
+    }
+    .about-header .mobile-hamburger .ham-bar {
+      background-color: #071a2b !important;
+    }
+
+    /* 2. Signature Blue & White Page Hero */
+    .about-hero {
+      position: relative;
+      padding: 4.8rem 1.5rem 3.8rem;
+      background: radial-gradient(ellipse at 50% -20%, #e8f2fc 0%, #f4f8fc 45%, #ffffff 85%);
+      text-align: center;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    .hero-pre-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.4rem 1.2rem;
+      background: rgba(37, 99, 235, 0.08);
+      border: 1px solid rgba(37, 99, 235, 0.22);
+      border-radius: 9999px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #1d4ed8;
+      margin-bottom: 1.2rem;
+    }
+
+    .about-hero-title {
+      font-family: var(--font-serif);
+      font-size: clamp(2.2rem, 5vw, 3.8rem);
+      font-weight: 700;
+      color: #071a2b;
+      line-height: 1.18;
+      max-width: 920px;
+      margin: 0 auto 1.2rem;
+      letter-spacing: -0.01em;
+    }
+
+    .luxury-blue-script {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-weight: 700;
+      color: #1d4ed8;
+      position: relative;
+      display: inline-block;
+    }
+
+    .about-hero-subtitle {
+      max-width: 720px;
+      margin: 0 auto 2.4rem;
+      font-size: 1.05rem;
+      color: #475569;
+      line-height: 1.7;
+    }
+
+    /* Trust / Metric Strip */
+    .hero-stat-strip {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1.5rem 2.5rem;
+      padding-top: 1.8rem;
+      border-top: 1px solid rgba(7, 26, 43, 0.08);
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    .hero-stat-item {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: #071a2b;
+    }
+
+    .hero-stat-item .stat-icon {
+      color: #2563eb;
+      font-size: 1.1rem;
+    }
+
+    /* 3. Leadership Showcase Section */
+    .leadership-section {
+      padding: 5.5rem 0 4.5rem;
+      background: #ffffff;
+      position: relative;
+    }
+
+    .section-eyebrow-luxury {
+      font-size: 0.76rem;
+      font-weight: 700;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: #1d4ed8;
+      text-align: center;
+      margin-bottom: 0.6rem;
+    }
+
+    .section-title-luxury {
+      font-family: var(--font-serif);
+      font-size: clamp(1.85rem, 3.5vw, 2.8rem);
+      font-weight: 700;
+      color: #071a2b;
+      text-align: center;
+      margin-bottom: 3.5rem;
+    }
+
+    /* Horizontal Leadership Cards Layout (Editorial Standard) */
+    .leaders-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 2.8rem;
+      max-width: 1080px;
+      margin: 0 auto;
+    }
+
+    /* Luxury Blue & White Horizontal Editorial Card */
+    .leader-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 26px;
+      overflow: hidden;
+      box-shadow: 0 10px 32px rgba(7, 26, 43, 0.05);
+      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.35s ease;
+      display: flex;
+      flex-direction: row;
+      align-items: stretch;
+      position: relative;
+    }
+
+    .leader-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 50px rgba(7, 26, 43, 0.1);
+      border-color: #2563eb;
+    }
+
+    /* Left: Portrait Image Container */
+    .leader-image-wrap {
+      position: relative;
+      flex: 0 0 36%;
+      min-width: 300px;
+      max-width: 380px;
+      align-self: stretch;
+      background: #f8fafc;
+      overflow: hidden;
+    }
+
+    .leader-photo {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 10%;
+      display: block;
+      transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .leader-card:hover .leader-photo {
+      transform: scale(1.04);
+    }
+
+    /* Subtle luxury gradient scrim on photo */
+    .leader-image-wrap::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        180deg,
+        rgba(7, 26, 43, 0.15) 0%,
+        rgba(7, 26, 43, 0.0) 45%,
+        rgba(7, 26, 43, 0.45) 100%
+      );
+      pointer-events: none;
+    }
+
+    /* Floating Role badge on photo */
+    .leader-role-badge {
+      position: absolute;
+      top: 1.2rem;
+      left: 1.2rem;
+      z-index: 2;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(7, 26, 43, 0.12);
+      padding: 0.4rem 0.95rem;
+      border-radius: 9999px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #071a2b;
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+      box-shadow: 0 4px 14px rgba(7, 26, 43, 0.1);
+    }
+
+    .leader-role-badge span.dot {
+      color: #2563eb;
+      font-size: 0.9rem;
+    }
+
+    /* Right: Leader Content Body */
+    .leader-body {
+      flex: 1;
+      padding: 2.6rem 3rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: #ffffff;
+    }
+
+    .leader-header-block {
+      margin-bottom: 0.9rem;
+    }
+
+    .leader-role-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #1d4ed8;
+      margin-bottom: 0.45rem;
+    }
+
+    .leader-main-name {
+      font-family: var(--font-serif);
+      font-size: clamp(1.65rem, 2.4vw, 2.2rem);
+      font-weight: 700;
+      color: #071a2b;
+      line-height: 1.2;
+      margin: 0 0 0.3rem;
+    }
+
+    .leader-designation {
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #2563eb;
+      display: block;
+    }
+
+    .leader-quote {
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-size: 1.02rem;
+      color: #071a2b;
+      line-height: 1.65;
+      margin: 1rem 0 1.2rem;
+      padding-left: 1.1rem;
+      border-left: 3px solid #2563eb;
+    }
+
+    .leader-desc {
+      font-size: 0.93rem;
+      color: #475569;
+      line-height: 1.7;
+      margin: 0 0 1.4rem;
+    }
+
+    /* Horizontal Contacts Strip */
+    .leader-contacts-strip {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.75rem;
+      margin: 0 0 1.4rem;
+      padding: 1rem 1.2rem;
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 16px;
+    }
+
+    .leader-contact-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      font-size: 0.84rem;
+      font-weight: 600;
+      color: #071a2b;
+      text-decoration: none;
+      padding: 0.45rem 0.95rem;
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      border-radius: 9999px;
+      transition: all 0.2s ease;
+    }
+
+    .leader-contact-pill:hover {
+      border-color: #2563eb;
+      color: #2563eb;
+      transform: translateY(-1px);
+    }
+
+    .leader-contact-pill svg {
+      color: #2563eb;
+      flex-shrink: 0;
+    }
+
+    .leader-wa-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: #ffffff;
+      background: #25d366;
+      padding: 0.5rem 1.1rem;
+      border-radius: 9999px;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      box-shadow: 0 4px 12px rgba(37, 211, 102, 0.25);
+    }
+
+    .leader-wa-btn:hover {
+      background: #1ebc59;
+      transform: translateY(-1px);
+      box-shadow: 0 6px 16px rgba(37, 211, 102, 0.35);
+    }
+
+    .leader-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.2rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid #f1f5f9;
+    }
+
+    .leader-tag {
+      font-size: 0.74rem;
+      font-weight: 600;
+      background: #f0f6fc;
+      border: 1px solid #cfe2fe;
+      color: #1d4ed8;
+      padding: 0.32rem 0.85rem;
+      border-radius: 9999px;
+      letter-spacing: 0.02em;
+    }
+
+    /* 4. Founders' Editorial Letter Section */
+    .manifesto-section {
+      padding: 5.5rem 0;
+      background: #f4f8fc;
+      border-top: 1px solid #e2e8f0;
+      border-bottom: 1px solid #e2e8f0;
+      position: relative;
+    }
+
+    .manifesto-card {
+      max-width: 940px;
+      margin: 0 auto;
+      background: #ffffff;
+      border: 1px solid #dbeafe;
+      border-radius: 28px;
+      padding: 3.8rem 3.5rem;
+      box-shadow: 0 16px 45px rgba(7, 26, 43, 0.05);
+      position: relative;
+    }
+
+    .watermark-quote {
+      position: absolute;
+      top: 1.5rem;
+      right: 2.5rem;
+      font-family: var(--font-serif);
+      font-size: 7rem;
+      line-height: 1;
+      color: rgba(37, 99, 235, 0.07);
+      user-select: none;
+      pointer-events: none;
+    }
+
+    .manifesto-title {
+      font-family: var(--font-serif);
+      font-size: clamp(1.6rem, 3vw, 2.3rem);
+      color: #071a2b;
+      line-height: 1.3;
+      margin-bottom: 1.8rem;
+    }
+
+    .manifesto-paragraphs {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      font-size: 0.98rem;
+      color: #334155;
+      line-height: 1.8;
+    }
+
+    .manifesto-paragraphs strong {
+      color: #071a2b;
+    }
+
+    .manifesto-signature-block {
+      margin-top: 2.8rem;
+      padding-top: 2rem;
+      border-top: 1px solid #e2e8f0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+
+    .handwritten-sign {
+      font-family: 'Caveat', cursive;
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: #1d4ed8;
+      line-height: 1.2;
+    }
+
+    .sign-meta {
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #64748b;
+    }
+
+    .stamp-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1.1rem;
+      border: 1.5px dashed #2563eb;
+      border-radius: 12px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: #1d4ed8;
+      background: rgba(37, 99, 235, 0.06);
+    }
+
+    /* 5. Four Pillars of Distinction */
+    .pillars-section {
+      padding: 5.5rem 0;
+      background: #ffffff;
+    }
+
+    .pillars-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+      margin-top: 3.5rem;
+    }
+
+    .pillar-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 20px;
+      padding: 2.2rem 1.6rem;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.03);
+      transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .pillar-card:hover {
+      transform: translateY(-6px);
+      border-color: #2563eb;
+      box-shadow: 0 16px 36px rgba(7, 26, 43, 0.08);
+    }
+
+    .pillar-num {
+      font-family: var(--font-serif);
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #2563eb;
+      margin-bottom: 0.6rem;
+      opacity: 0.9;
+    }
+
+    .pillar-title {
+      font-family: var(--font-serif);
+      font-size: 1.18rem;
+      font-weight: 600;
+      color: #071a2b;
+      margin-bottom: 0.75rem;
+    }
+
+    .pillar-desc {
+      font-size: 0.86rem;
+      color: #64748b;
+      line-height: 1.6;
+    }
+
+    .pillars-carousel-dots,
+    .pillars-swipe-hint {
+      display: none;
+    }
+
+    /* 6. Grand Consultation CTA Card */
+    .consultation-cta-section {
+      padding: 0 0 5rem;
+      background: #ffffff;
+    }
+
+    .consultation-cta-box {
+      max-width: 1040px;
+      margin: 0 auto;
+      background: linear-gradient(135deg, #071a2b 0%, #0d2c47 100%);
+      border-radius: 28px;
+      padding: 3.8rem 3rem;
+      color: #ffffff;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 20px 50px rgba(7, 26, 43, 0.2);
+    }
+
+    .consultation-cta-box::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(75, 130, 184, 0.25) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .cta-eyebrow {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #93c5fd;
+      margin-bottom: 0.75rem;
+    }
+
+    .cta-title {
+      font-family: var(--font-serif);
+      font-size: clamp(1.8rem, 3.5vw, 2.7rem);
+      font-weight: 700;
+      line-height: 1.25;
+      margin-bottom: 1rem;
+    }
+
+    .cta-subtitle {
+      max-width: 620px;
+      margin: 0 auto 2.4rem;
+      font-size: 0.96rem;
+      color: rgba(255, 255, 255, 0.85);
+      line-height: 1.65;
+    }
+
+    .cta-actions-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+    }
+
+    .cta-btn-blue {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      background: #2563eb;
+      color: #ffffff;
+      font-size: 0.88rem;
+      font-weight: 700;
+      padding: 0.95rem 1.8rem;
+      border-radius: 9999px;
+      text-decoration: none;
+      transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 8px 24px rgba(37, 99, 235, 0.35);
+    }
+
+    .cta-btn-blue:hover {
+      background: #1d4ed8;
+      transform: translateY(-2px);
+      box-shadow: 0 12px 30px rgba(37, 99, 235, 0.5);
+    }
+
+    .cta-btn-outline {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      background: rgba(255, 255, 255, 0.08);
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      font-size: 0.88rem;
+      font-weight: 600;
+      padding: 0.95rem 1.8rem;
+      border-radius: 9999px;
+      text-decoration: none;
+      transition: background 0.3s ease, border-color 0.3s ease;
+    }
+
+    .cta-btn-outline:hover {
+      background: rgba(255, 255, 255, 0.16);
+      border-color: #ffffff;
+    }
+
+    /* ==========================================================================
+       RESPONSIVE MEDIA QUERIES (LAPTOP & MOBILE)
+       ========================================================================== */
+    @media (max-width: 1024px) {
+      .pillars-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+      }
+      .leaders-grid {
+        max-width: 900px;
+        gap: 2.2rem;
+      }
+      .leader-image-wrap {
+        flex: 0 0 40%;
+        min-width: 280px;
+        min-height: 380px;
+      }
+      .leader-body {
+        padding: 2rem 2.2rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .about-header {
+        padding: 0.8rem 1rem 0;
+      }
+      .about-hero {
+        padding: 3rem 1.25rem 2.5rem;
+      }
+      .about-hero-title {
+        font-size: 2rem;
+        line-height: 1.22;
+      }
+      .about-hero-subtitle {
+        font-size: 0.9rem;
+        margin-bottom: 1.8rem;
+      }
+      .hero-stat-strip {
+        gap: 1rem 1.5rem;
+      }
+      .hero-stat-item {
+        font-size: 0.8rem;
+      }
+      
+      .leadership-section {
+        padding: 3.5rem 0 3rem;
+      }
+      .section-title-luxury {
+        margin-bottom: 2.2rem;
+      }
+      .leaders-grid {
+        gap: 2.2rem;
+        max-width: 100%;
+      }
+      .leader-card {
+        flex-direction: column;
+        border-radius: 20px;
+      }
+      .leader-image-wrap {
+        flex: none;
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        height: 320px;
+        min-height: 320px;
+      }
+      .leader-body {
+        padding: 1.8rem 1.4rem 2rem;
+      }
+      .leader-main-name {
+        font-size: 1.6rem;
+      }
+      .leader-quote {
+        font-size: 0.94rem;
+        margin: 0.8rem 0 1rem;
+      }
+      .leader-desc {
+        font-size: 0.88rem;
+        margin-bottom: 1.2rem;
+      }
+      .leader-contacts-strip {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.6rem;
+        padding: 0.85rem;
+      }
+      .leader-contact-pill,
+      .leader-wa-btn {
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+      }
+
+      .manifesto-section {
+        padding: 3.5rem 0;
+      }
+      .manifesto-card {
+        padding: 2.2rem 1.4rem;
+        border-radius: 20px;
+      }
+      .watermark-quote {
+        display: none;
+      }
+      .manifesto-title {
+        font-size: 1.45rem;
+        margin-bottom: 1.2rem;
+      }
+      .manifesto-paragraphs {
+        font-size: 0.9rem;
+        gap: 1rem;
+        line-height: 1.7;
+      }
+      .manifesto-signature-block {
+        margin-top: 2rem;
+        padding-top: 1.5rem;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .handwritten-sign {
+        font-size: 1.85rem;
+      }
+
+      .pillars-section {
+        padding: 3.5rem 0 3rem;
+        overflow: hidden;
+      }
+      .pillars-grid {
+        display: flex !important;
+        flex-direction: row !important;
+        overflow-x: auto !important;
+        scroll-snap-type: x mandatory !important;
+        scroll-behavior: smooth !important;
+        -webkit-overflow-scrolling: touch !important;
+        gap: 1rem !important;
+        padding: 0.5rem 0.25rem 1.25rem !important;
+        margin-top: 2rem !important;
+        max-width: 100% !important;
+        scrollbar-width: none !important;
+      }
+      .pillars-grid::-webkit-scrollbar {
+        display: none !important;
+      }
+      .pillar-card {
+        flex: 0 0 84% !important;
+        min-width: 84% !important;
+        max-width: 84% !important;
+        scroll-snap-align: center !important;
+        padding: 1.8rem 1.4rem !important;
+        border-radius: 20px !important;
+        background: #ffffff !important;
+        border: 1px solid #e2e8f0 !important;
+        box-shadow: 0 10px 28px rgba(7, 26, 43, 0.06) !important;
+      }
+      .pillars-carousel-dots {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 0.55rem !important;
+        margin-top: 0.5rem !important;
+      }
+      .p-dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 9999px;
+        background: #cbd5e1;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      .p-dot.active {
+        width: 24px;
+        background: #071a2b;
+      }
+      .pillars-swipe-hint {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        gap: 0.4rem;
+        text-align: center;
+        font-size: 0.74rem;
+        font-weight: 600;
+        color: #94a3b8;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        margin-top: 0.75rem;
+      }
+
+      .consultation-cta-box {
+        padding: 2.5rem 1.5rem;
+        border-radius: 22px;
+      }
+      .cta-title {
+        font-size: 1.65rem;
+      }
+      .cta-subtitle {
+        font-size: 0.88rem;
+        margin-bottom: 1.8rem;
+      }
+      .cta-actions-row {
+        flex-direction: column;
+        width: 100%;
+      }
+      .cta-btn-blue,
+      .cta-btn-outline {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header / Navbar -->
+  <header class="about-header">
+    <nav class="navbar" aria-label="Main Navigation">
+      <a href="index.html" class="brand-logo" aria-label="Nishamika Holiday Home">
+        <img src="assets/logo.jpeg" alt="Nishamika Holiday Logo" class="brand-logo-img" />
+        <div class="brand-text">
+          <span class="brand-title">Nishamika</span>
+          <span class="brand-subtitle">HOLIDAY</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" id="desktopNavLinks">
+        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="index.html#popular-destinations" class="nav-link">Destinations</a></li>
+        <li class="nav-item"><a href="index.html#curated-experiences" class="nav-link">Experiences</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link active">About Founders</a></li>
+        <li class="nav-item"><a href="index.html#trust-features" class="nav-link">Why Us</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="index.html#popular-destinations" class="cta-pill-btn">
+          <span>Explore Destinations →</span>
+        </a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button type="button" class="mobile-hamburger" id="hamburgerBtn" aria-label="Toggle Navigation Menu" aria-expanded="false">
+          <span class="ham-bar"></span>
+          <span class="ham-bar"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Drawer Overlay -->
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="mobile-drawer-inner">
+      <div class="drawer-header">
+        <div class="drawer-brand-wrap">
+          <img src="assets/logo.jpeg" alt="Nishamika Holiday Logo" class="brand-logo-img" />
+          <div class="brand-text">
+            <span class="brand-title">Nishamika</span>
+            <span class="brand-subtitle">HOLIDAY</span>
+          </div>
+        </div>
+        <button type="button" class="drawer-close" id="drawerCloseBtn" aria-label="Close Navigation Menu">&times;</button>
+      </div>
+      <ul class="mobile-nav-links">
+        <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+        <li><a href="index.html#popular-destinations" class="mobile-nav-link">Top Destinations</a></li>
+        <li><a href="index.html#curated-experiences" class="mobile-nav-link">Experiences</a></li>
+        <li><a href="about.html" class="mobile-nav-link active">About Founders</a></li>
+        <li><a href="index.html#trust-features" class="mobile-nav-link">Why Nishamika</a></li>
+      </ul>
+      <div class="mobile-drawer-cta">
+        <a href="index.html#popular-destinations" class="cta-pill-btn full-width">
+          <span>Explore Destinations →</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       2. EDITORIAL PAGE HERO
+       ========================================================================= -->
+  <section class="about-hero">
+    <div class="section-container">
+      <div class="hero-pre-badge">
+        <span>✦</span>
+        <span>PRIVATE LUXURY TRAVEL ATELIER</span>
+        <span>✦</span>
+      </div>
+      <h1 class="about-hero-title">
+        The Visionaries Behind <br />
+        <span class="luxury-blue-script">Nishamika Holiday</span>
+      </h1>
+      <p class="about-hero-subtitle">
+        Founded by Abhishek Kumar Srivastava, Anamika Gupta &amp; Arun Shrivastava. We left generic, automated tourism behind to create bespoke international journeys defined by personal warmth, hand-vetted sanctuaries, and flawless execution.
+      </p>
+
+      <!-- Trust Metrics Bar -->
+      <div class="hero-stat-strip">
+        <div class="hero-stat-item">
+          <span class="stat-icon">✦</span>
+          <span>100% Handcrafted Routes</span>
+        </div>
+        <div class="hero-stat-item">
+          <span class="stat-icon">✦</span>
+          <span>Hand-Inspected Luxury Stays</span>
+        </div>
+        <div class="hero-stat-item">
+          <span class="stat-icon">✦</span>
+          <span>Direct Founder Concierge</span>
+        </div>
+        <div class="hero-stat-item">
+          <span class="stat-icon">✦</span>
+          <span>5 Curated Focus Countries</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       3. TRIO LEADERSHIP SHOWCASE (ABHISHEK, ANAMIKA & ARUN)
+       ========================================================================= -->
+  <section class="leadership-section">
+    <div class="section-container">
+      <p class="section-eyebrow-luxury">— &nbsp; PRINCIPAL DIRECTORS &nbsp; —</p>
+      <h2 class="section-title-luxury">Leadership Guided by Passion</h2>
+
+      <!-- 3 Horizontal Executive Leader Cards -->
+      <div class="leaders-grid">
+        
+        <!-- =============================================================== -->
+        <!-- 👤 LEADER 1: ABHISHEK KUMAR SRIVASTAVA (FOUNDER & DIRECTOR) -->
+        <!-- =============================================================== -->
+        <article class="leader-card">
+          <!-- Left: High-Res Portrait Photo -->
+          <div class="leader-image-wrap">
+            <img src="assets/owner1.png" alt="Abhishek Kumar Srivastava — Founder &amp; Director" class="leader-photo" loading="lazy" />
+            <div class="leader-role-badge">
+              <span class="dot">✦</span>
+              <span>Founder &amp; Director</span>
+            </div>
+          </div>
+
+          <!-- Right: Profile Details & Contact -->
+          <div class="leader-body">
+            <div class="leader-header-block">
+              <div class="leader-role-tag">
+                <span>✦</span>
+                <span>Directorate</span>
+              </div>
+              <h3 class="leader-main-name">Abhishek Kumar Srivastava</h3>
+              <span class="leader-designation">Founder &amp; Principal Director</span>
+            </div>
+
+            <blockquote class="leader-quote">
+              “True luxury is personalized attention. Every traveler deserves a handcrafted journey planned with uncompromised excellence.”
+            </blockquote>
+
+            <p class="leader-desc">
+              Directs global operations, luxury destination partnerships, VIP relationship management, and bespoke international itineraries across Southeast Asia and India.
+            </p>
+
+            <!-- Direct Contact Details Strip -->
+            <div class="leader-contacts-strip">
+              <a href="tel:+919389892213" class="leader-contact-pill" title="Call Abhishek Kumar Srivastava">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                <span>+91 93898 92213</span>
+              </a>
+
+              <a href="mailto:abhikayasthani@gmail.com" class="leader-contact-pill" title="Email Abhishek Kumar Srivastava">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <span>abhikayasthani@gmail.com</span>
+              </a>
+
+              <a href="https://wa.me/919389892213?text=Hello%20Abhishek%20Ji%2C%20I%20would%20like%20to%20consult%20with%20you%20directly%20regarding%20a%20bespoke%20luxury%20tour%20with%20Nishamika%20Holiday." target="_blank" rel="noopener noreferrer" class="leader-wa-btn" title="WhatsApp Chat with Abhishek Kumar Srivastava">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+                  <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/>
+                </svg>
+                <span>Direct WhatsApp</span>
+              </a>
+            </div>
+
+            <!-- Tags -->
+            <div class="leader-tags">
+              <span class="leader-tag">Bespoke Journeys</span>
+              <span class="leader-tag">VIP Stays</span>
+              <span class="leader-tag">Global Strategy</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- =============================================================== -->
+        <!-- 👤 LEADER 2: ANAMIKA GUPTA (CO-FOUNDER) -->
+        <!-- =============================================================== -->
+        <article class="leader-card">
+          <!-- Left: High-Res Portrait Photo -->
+          <div class="leader-image-wrap">
+            <img src="assets/owner2.png" alt="Anamika Gupta — Co-Founder" class="leader-photo" loading="lazy" />
+            <div class="leader-role-badge">
+              <span class="dot">✦</span>
+              <span>Co-Founder</span>
+            </div>
+          </div>
+
+          <!-- Right: Profile Details & Contact -->
+          <div class="leader-body">
+            <div class="leader-header-block">
+              <div class="leader-role-tag">
+                <span>✦</span>
+                <span>Founding Partner</span>
+              </div>
+              <h3 class="leader-main-name">Anamika Gupta</h3>
+              <span class="leader-designation">Co-Founder</span>
+            </div>
+
+            <blockquote class="leader-quote">
+              “From your first consultation to your journey back home, our mission is to deliver warmth, flawless comfort, and lifelong memories.”
+            </blockquote>
+
+            <p class="leader-desc">
+              Oversees guest experience design, handpicked boutique resort partnerships, bespoke honeymoons, and 24/7 client care across all destinations.
+            </p>
+
+            <!-- Direct Contact Details Strip -->
+            <div class="leader-contacts-strip">
+              <a href="tel:+919569885345" class="leader-contact-pill" title="Call Anamika Gupta">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                <span>+91 95698 85345</span>
+              </a>
+
+              <a href="mailto:anikayasthabhi@gmail.com" class="leader-contact-pill" title="Email Anamika Gupta">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <span>anikayasthabhi@gmail.com</span>
+              </a>
+
+              <a href="https://wa.me/919569885345?text=Hi%20Anamika%20Ji%2C%20I%20am%20reaching%20out%20to%20discuss%20curated%20boutique%20stays%20and%20personalized%20holiday%20planning%20with%20Nishamika%20Holiday." target="_blank" rel="noopener noreferrer" class="leader-wa-btn" title="WhatsApp Chat with Anamika Gupta">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+                  <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/>
+                </svg>
+                <span>Direct WhatsApp</span>
+              </a>
+            </div>
+
+            <!-- Tags -->
+            <div class="leader-tags">
+              <span class="leader-tag">Guest Experience</span>
+              <span class="leader-tag">Boutique Stays</span>
+              <span class="leader-tag">24/7 Concierge</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- =============================================================== -->
+        <!-- 👤 LEADER 3: ARUN SHRIVASTAVA (MANAGING DIRECTOR) -->
+        <!-- =============================================================== -->
+        <article class="leader-card">
+          <!-- Left: High-Res Portrait Photo -->
+          <div class="leader-image-wrap">
+            <img src="assets/owner3.png" alt="Arun Shrivastava — Managing Director" class="leader-photo" loading="lazy" />
+            <div class="leader-role-badge">
+              <span class="dot">✦</span>
+              <span>Managing Director</span>
+            </div>
+          </div>
+
+          <!-- Right: Profile Details & Contact -->
+          <div class="leader-body">
+            <div class="leader-header-block">
+              <div class="leader-role-tag">
+                <span>✦</span>
+                <span>Operations &amp; Strategy</span>
+              </div>
+              <h3 class="leader-main-name">Arun Shrivastava</h3>
+              <span class="leader-designation">Managing Director</span>
+            </div>
+
+            <blockquote class="leader-quote">
+              “Flawless execution is the backbone of exceptional luxury travel. Punctuality, safety, and attention to detail are our sacred promises.”
+            </blockquote>
+
+            <p class="leader-desc">
+              Drives business operations, private chauffeur fleets, flight and on-ground logistics, and ensures seamless coordination across all international circuits.
+            </p>
+
+            <!-- Direct Contact Details Strip -->
+            <div class="leader-contacts-strip">
+              <a href="tel:+919151478150" class="leader-contact-pill" title="Call Arun Shrivastava">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                <span>+91 91514 78150</span>
+              </a>
+
+              <a href="https://wa.me/919151478150?text=Hello%20Arun%20Ji%2C%20I%20have%20an%20inquiry%20regarding%20private%20tour%20logistics%2C%20chauffeur%20fleet%2C%20and%20travel%20execution." target="_blank" rel="noopener noreferrer" class="leader-wa-btn" title="WhatsApp Chat with Arun Shrivastava">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+                  <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/>
+                </svg>
+                <span>Direct WhatsApp</span>
+              </a>
+            </div>
+
+            <!-- Tags -->
+            <div class="leader-tags">
+              <span class="leader-tag">Operations &amp; Fleet</span>
+              <span class="leader-tag">Safety Assurance</span>
+              <span class="leader-tag">Tour Logistics</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       4. FOUNDERS' MANIFESTO / LETTER
+       ========================================================================= -->
+  <section class="manifesto-section">
+    <div class="section-container">
+      <div class="manifesto-card">
+        <span class="watermark-quote">“</span>
+        
+        <p class="section-eyebrow-luxury" style="text-align: left; margin-bottom: 0.5rem;">— &nbsp; OUR PHILOSOPHY &nbsp; —</p>
+        <h2 class="manifesto-title">Why We Built Nishamika Holiday</h2>
+
+        <div class="manifesto-paragraphs">
+          <p>
+            When we established <strong>Nishamika Holiday</strong>, our purpose was clear: to bring genuine hospitality, personal care, and thoughtful curation back to international travel. In an era overrun by impersonal booking algorithms and crowded bus tours, travelers were losing the magic and ease of real exploration.
+          </p>
+          <p>
+            We believe that a holiday should be effortless from the first conversation. When you trust us with your journey to <strong>Malaysia, Thailand, Vietnam, India, or Nepal</strong>, you are not handed off to an anonymous representative. You receive our personal attention, hand-inspected luxury stays, private experienced chauffeurs, and 24/7 on-tour support.
+          </p>
+          <p>
+            We don’t strive to be the biggest agency. We strive to be the most trusted. Thank you for welcoming us into your journey.
+          </p>
+        </div>
+
+        <!-- Signature Block -->
+        <div class="manifesto-signature-block">
+          <div>
+            <div class="handwritten-sign">Abhishek Kumar Srivastava, Anamika Gupta &amp; Arun Shrivastava</div>
+            <span class="sign-meta">Founders &amp; Directors, Nishamika Holiday</span>
+          </div>
+
+          <div class="stamp-badge">
+            <span>✨</span>
+            <span>Direct Founder Assurance</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       5. FOUR PILLARS OF NISHAMIKA DISTINCTION
+       ========================================================================= -->
+  <section class="pillars-section">
+    <div class="section-container">
+      <p class="section-eyebrow-luxury">— &nbsp; THE NISHAMIKA STANDARD &nbsp; —</p>
+      <h2 class="section-title-luxury">Four Pillars of Every Journey</h2>
+
+      <div class="pillars-grid">
+        
+        <div class="pillar-card">
+          <span class="pillar-num">01</span>
+          <h3 class="pillar-title">100% Tailored Routes</h3>
+          <p class="pillar-desc">
+            No cookie-cutter templates. Your daily itinerary is designed specifically around your travel rhythm, preferences, and desires.
+          </p>
+        </div>
+
+        <div class="pillar-card">
+          <span class="pillar-num">02</span>
+          <h3 class="pillar-title">Hand-Inspected Stays</h3>
+          <p class="pillar-desc">
+            From riverfront heritage havelis in Varanasi to private cliffside villas in Phuket, every stay is personally vetted for hygiene, luxury, and warmth.
+          </p>
+        </div>
+
+        <div class="pillar-card">
+          <span class="pillar-num">03</span>
+          <h3 class="pillar-title">Private Chauffeurs</h3>
+          <p class="pillar-desc">
+            Clean, air-conditioned private vehicles with professional, licensed local chauffeurs ensuring seamless and safe transit at every step.
+          </p>
+        </div>
+
+        <div class="pillar-card">
+          <span class="pillar-num">04</span>
+          <h3 class="pillar-title">Direct Founder Line</h3>
+          <p class="pillar-desc">
+            You receive direct phone and WhatsApp contact with our founders throughout your holiday for total peace of mind and instant assistance.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Mobile Carousel Indicators -->
+      <div class="pillars-carousel-dots" id="pillarsDots">
+        <button type="button" class="p-dot active" data-index="0" aria-label="Pillar 1"></button>
+        <button type="button" class="p-dot" data-index="1" aria-label="Pillar 2"></button>
+        <button type="button" class="p-dot" data-index="2" aria-label="Pillar 3"></button>
+        <button type="button" class="p-dot" data-index="3" aria-label="Pillar 4"></button>
+      </div>
+      <p class="pillars-swipe-hint"><span>← Swipe to explore pillars →</span></p>
+    </div>
+  </section>
+
+
+  <!-- =========================================================================
+       6. GRAND CONSULTATION CALL TO ACTION
+       ========================================================================= -->
+  <section class="consultation-cta-section">
+    <div class="section-container">
+      <div class="consultation-cta-box">
+        <p class="cta-eyebrow">YOUR BESPOKE JOURNEY AWAITS</p>
+        <h2 class="cta-title">Let’s Plan An Unforgettable Escape</h2>
+        <p class="cta-subtitle">
+          Whether you dream of a royal Rajasthan palace stay, sunrise over the Himalayas in Nepal, or secluded island bays in Thailand—speak directly with our founders today.
+        </p>
+        
+        <div class="cta-actions-row">
+          <a href="index.html#popular-destinations" class="cta-btn-blue">
+            <span>Explore 5 Focus Countries</span>
+            <span>→</span>
+          </a>
+          <a href="https://wa.me/919389892213?text=Hello%20Nishamika%20Holiday!%20I%20would%20like%20to%20schedule%20a%20private%20luxury%20holiday%20consultation." target="_blank" rel="noopener noreferrer" class="cta-btn-outline">
+            <span>Speak With Founders on WhatsApp</span>
+            <span>↗</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Grand Luxury Footer -->
+  <footer class="luxury-footer" id="footer">
+    <div class="section-container">
+      <div class="footer-main-grid">
+        <div class="footer-col footer-brand-col">
+          <div class="footer-brand-header">
+            <img src="assets/logo.jpeg" alt="Nishamika Holiday Logo" class="footer-logo-img" />
+            <div class="brand-text">
+              <span class="brand-title">Nishamika</span>
+              <span class="brand-subtitle">HOLIDAY</span>
+            </div>
+          </div>
+          <p class="footer-tagline">
+            Curating luxury international getaways and timeless cultural expeditions with dedicated personal attention.
+          </p>
+          <div class="footer-founder-badge">
+            <span>Founders: <strong>Abhishek, Anamika &amp; Arun</strong></span>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Featured Countries</h4>
+          <ul class="footer-links">
+            <li><a href="index.html#popular-destinations">Malaysia</a></li>
+            <li><a href="index.html#popular-destinations">Thailand</a></li>
+            <li><a href="index.html#popular-destinations">Vietnam</a></li>
+            <li><a href="index.html#popular-destinations">India</a></li>
+            <li><a href="index.html#popular-destinations">Nepal</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Quick Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#popular-destinations">Destinations</a></li>
+            <li><a href="index.html#curated-experiences">Travel Experiences</a></li>
+            <li><a href="about.html">About Founders</a></li>
+            <li><a href="index.html#trust-features">Why Nishamika</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-consult-col">
+          <h4 class="footer-col-title">Personalized Travel</h4>
+          <p class="footer-consult-text">
+            Every holiday is crafted individually. No automated algorithms—custom planning directed by Abhishek Kumar Srivastava, Anamika Gupta &amp; Arun Shrivastava.
+          </p>
+          <div class="footer-assurance-box">
+            <span class="assurance-icon">✨</span>
+            <span>Private &amp; Custom Tours</span>
+          </div>
+          <div class="footer-timing">
+            <small>Consultation Hours: Mon – Sat (10:00 AM – 8:00 PM)</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-strip">
+        <p class="copyright-text">
+          &copy; 2026 <strong>Nishamika Holiday</strong>. All rights reserved. Directed by Abhishek Kumar Srivastava, Anamika Gupta &amp; Arun Shrivastava.
+        </p>
+        <div class="footer-bottom-links">
+          <a href="index.html">Back to Home ↑</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

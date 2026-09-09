@@ -1,0 +1,399 @@
+================================================================================
+                    NISHAMIKA HOLIDAY — PROJECT MASTER DOCUMENTATION
+                   (Complete AI System Reference & Architecture Guide)
+================================================================================
+DATE GENERATED: September 2026
+PROJECT DIRECTORY: c:\Users\DELL\Desktop\_backup
+PRIMARY CONTACT / DIRECTORS: Abhishek Kumar Srivastava, Anamika Gupta & Arun Shrivastava
+
+================================================================================
+TABLE OF CONTENTS
+================================================================================
+1. PROJECT IDENTITY, BRANDING & CORE BUSINESS MODEL
+2. STRICT DESIGN SYSTEM & COLOR PALETTE (BLUE & WHITE LUXURY)
+3. COMPLETE DIRECTORY & FILE INVENTORY
+4. ASSET CATALOG (ALL 33+ IMAGES & USAGE)
+5. PAGE-BY-PAGE DETAILED ARCHITECTURE
+   5.1. index.html (Main Landing Page)
+   5.2. about.html (About Founders & Leadership)
+   5.3. countries/india.html (Country Template & Exploration)
+6. JAVASCRIPT BEHAVIOR & INTERACTIVE ENGINE (script.js)
+7. CSS ARCHITECTURE & RESPONSIVE BREAKPOINTS (styles.css)
+8. CRITICAL RULES & INVIOLABLE CONSTRAINTS FOR FUTURE AI SESSIONS
+9. STEP-BY-STEP PROMPTING GUIDE FOR FUTURE DEVELOPERS & AGENTS
+
+================================================================================
+1. PROJECT IDENTITY, BRANDING & CORE BUSINESS MODEL
+================================================================================
+- BRAND NAME: Nishamika Holiday
+- BRAND SUBTITLE: HOLIDAY
+- TAGLINES:
+  * "The World Awaits You"
+  * "New Places, New Stories, Same You"
+  * "Travel More, Worry Less"
+- BUSINESS DOMAIN: Ultra-luxury, bespoke, and personalized international travel curations.
+- TARGET DESTINATIONS:
+  * Malaysia (Kuala Lumpur, Langkawi, Penang)
+  * Thailand (Bangkok, Phuket, Krabi)
+  * Vietnam (Hanoi, Ha Long Bay, Da Nang, Hoi An)
+  * India (Varanasi, Rajasthan/Udaipur, Kerala, Agra)
+  * Nepal (Kathmandu, Pokhara, Himalayas)
+- LEADERSHIP & FOUNDERS:
+  1. Abhishek Kumar Srivastava — Founder & Director
+     * Photo: assets/owner1.png
+     * Phone: +91 93898 92213
+     * Email: abhikayasthani@gmail.com
+  2. Anamika Gupta — Co-Founder
+     * Photo: assets/owner2.png
+     * Phone: +91 95698 85345
+     * Email: anikayasthabhi@gmail.com
+  3. Arun Shrivastava — Managing Director
+     * Photo: assets/owner3.png
+     * Phone: +91 91514 78150
+- BOOKING MODEL (CRITICAL):
+  * Strictly NO automated checkout, cart, or payment gateway.
+  * All bookings and inquiries are conducted via direct 1-on-1 human consultation
+    and direct WhatsApp routing.
+  * Every itinerary is custom-made.
+
+================================================================================
+2. STRICT DESIGN SYSTEM & COLOR PALETTE (BLUE & WHITE LUXURY)
+================================================================================
+IMPORTANT: The user explicitly demanded a strict SIGNATURE BLUE & WHITE theme
+matching the home page aesthetic. DO NOT use dull gold boxes, dark muddy containers,
+or box-inside-a-box nested borders!
+
+- CORE PALETTE:
+  * Royal Navy (Primary Dark): #071a2b, #08213d
+  * Crisp Pure White (Background & Cards): #ffffff
+  * Soft Sky / Ice Wash (Section Backgrounds): #f4f8fc, #e8f2fc, #f8fafc
+  * Sapphire / Royal Blue (Active Links & Accents): #1d4ed8, #2563eb
+  * Soft Slate / Muted Text: #334155, #475569, #64748b, #94a3b8
+  * Subtle Borders: #e2e8f0
+  * Accent Gold (Reserved strictly for star ratings & pin highlights): #b8860b, #e2c082
+
+- TYPOGRAPHY:
+  * Headings & Editorial Titles: 'Playfair Display', Georgia, serif
+  * UI, Body Text, Buttons, Subtitles: 'Plus Jakarta Sans', -apple-system, sans-serif
+  * Handwritten Quotes & Airplane Accents: 'Caveat', cursive
+
+- CARD & SURFACE ELEVATION:
+  * Surface: Crisp white (#ffffff) with 1px border (#e2e8f0)
+  * Shadow: 0 10px 30px rgba(7, 26, 43, 0.08)
+  * Hover: translateY(-5px) with soft blue or subtle gold border transition
+  * Border Radius: 18px to 24px (Pill-like smooth corners)
+
+================================================================================
+3. COMPLETE DIRECTORY & FILE INVENTORY
+================================================================================
+c:\Users\DELL\Desktop\_backup\
+├── index.html                       <- Main landing page
+├── about.html                       <- Dedicated Founders & Leadership page
+├── styles.css                       <- Master stylesheet (3,100+ lines, fully responsive)
+├── script.js                        <- Master JS interactivity engine
+├── PROJECT_MASTER_DOCUMENTATION.txt <- This documentation file
+├── USE.png                          <- Root copy of hero background
+├── USE2.png                         <- Root copy of destinations background
+├── countries\
+│   └── india.html                   <- Detailed destination guide for India
+└── assets\
+    ├── logo.jpeg                    <- Official circular Nishamika Holiday logo
+    ├── owner1.png                   <- Abhishek Kumar Srivastava (Founder & Director)
+    ├── owner2.png                   <- Anamika Gupta (Co-Founder)
+    ├── owner3.png                   <- Arun Shrivastava (Managing Director)
+    ├── travel_styles_bg.png         <- Panoramic background for Travel Styles section
+    ├── USE.png                      <- Hero cinematic background (plane & clouds)
+    ├── USE2.png                     <- Destinations cinematic background
+    ├── card_india.png               <- Destination card image for India
+    ├── card_malaysia.png            <- Destination card image for Malaysia
+    ├── card_nepal.png               <- Destination card image for Nepal
+    ├── card_thailand.png            <- Destination card image for Thailand
+    ├── card_vietnam.png             <- Destination card image for Vietnam
+    ├── india.png                    <- High-res hero for India country page
+    ├── malaysia.png                 <- High-res hero for Malaysia
+    ├── thailand.png                 <- High-res hero for Thailand
+    ├── nepal.png                    <- High-res hero for Nepal
+    ├── Veitnam.png                  <- High-res hero for Vietnam
+    └── [various card backgrounds & clean reference images]
+
+================================================================================
+4. ASSET CATALOG (ALL KEY ASSETS & THEIR ROLES)
+================================================================================
+1. assets/logo.jpeg
+   - Round logo used in navbar, mobile drawer, and footer.
+2. assets/owner1.png
+   - Abhishek Kumar Srivastava portrait in about.html (Founder & Director).
+3. assets/owner2.png
+   - Anamika Gupta portrait in about.html (Co-Founder).
+4. assets/owner3.png
+   - Arun Shrivastava portrait in about.html (Managing Director).
+5. assets/travel_styles_bg.png
+   - Panoramic scenic collage (palm leaves, tropical islands, plane trail,
+     and polaroid photos). Set as background of #curated-experiences section
+     ("Crafted For Every Style of Travel").
+5. assets/USE.png
+   - Full cinematic hero background (sky, airplane, mountains) in index.html.
+6. assets/USE2.png
+   - Background for #popular-destinations section in index.html.
+7. assets/card_malaysia.png, assets/card_thailand.png, assets/card_vietnam.png,
+   assets/card_india.png, assets/card_nepal.png
+   - 5 interactive cards under "Explore Our Popular Destinations".
+8. assets/india.png, assets/malaysia.png, assets/thailand.png, assets/nepal.png, assets/Veitnam.png
+   - Full resolution landscape photos for country subpages.
+
+================================================================================
+5. PAGE-BY-PAGE DETAILED ARCHITECTURE
+================================================================================
+
+--------------------------------------------------------------------------------
+5.1. index.html (Main Landing Page)
+--------------------------------------------------------------------------------
+Contains 5 primary sections:
+
+1. NAVBAR & HERO SECTION (#hero):
+   - Glassmorphism sticky navbar with Logo, brand text ("Nishamika HOLIDAY"),
+     Desktop links (Home, Destinations, Experiences, About Founders, Why Us),
+     and "Plan Journey" WhatsApp button.
+   - Mobile Drawer (.mobile-nav-drawer): Slides in from right on hamburger click.
+   - Cinematic Hero (.hero-bg using assets/USE.png):
+     * Headline: "Crafting Your Unforgettable Journey"
+     * Quick Tag Pills: Bali, Phuket, Hanoi, Langkawi, Rajasthan
+     * Luxury Interactive Search Bar:
+       - Destination Selector with popover dropdown (5 countries)
+       - Departure Date picker
+       - Travelers Popover Counter (+/- buttons for Adults and Children)
+       - Search Button ("Find Luxury Packages" -> triggers smooth scroll to destinations)
+     * Hero Destination Overlays: 4 floating cards (Malaysia, Thailand, Vietnam, India)
+     * Bottom Trust Glass Bar: 3 guarantee badges (100% Customization, Best Price, 24/7 Concierge)
+
+2. POPULAR DESTINATIONS & TRUST STRIP (#popular-destinations):
+   - Background: assets/USE2.png with soft white lighting overlay.
+   - Section Eyebrow: "— TOP DESTINATIONS —"
+   - Section Title: "Explore Our Popular Destinations"
+   - 5 Destination Cards (Malaysia, Thailand, Vietnam, India, Nepal):
+     * All cards use interactive selection arrow buttons syncing with search bar and scroll.
+     * Unlinked from individual subpages until future multi-country release.
+   - Trust Feature Strip (#trust-features): 4 glass pillars
+     * Curated Experiences
+     * Personalized Guidance
+     * Safe & Reliable
+     * Direct Support (WhatsApp anytime)
+
+3. EXPANDING IMAGE ACCORDION: TRAVEL STYLES (#curated-experiences):
+   - Background: assets/travel_styles_bg.png (.curated-bg) with multi-stop gradient (.curated-overlay).
+   - Section Title: "Crafted For Every Style of Travel"
+   - Horizontal Expanding Accordion (4 Panels):
+     * Panel 1: Heritage & Imperial Wonders (India • Vietnam) - Default Active
+     * Panel 2: Tropical Island & Coastal Retreats (Thailand • Malaysia)
+     * Panel 3: Spiritual & Himalayan Sanctuaries (Nepal • North India)
+     * Panel 4: Modern Megacities & High Luxury (Malaysia • Thailand)
+   - Behavior:
+     * Desktop: Hovering over any panel smoothly expands it (flex: 3.8 vs flex: 1).
+     * Mobile: Vertical accordion layout; tapping any panel expands height to 340px.
+
+4. GUEST EXPERIENCES & STORIES (#testimonials):
+   - Section Eyebrow: "— GUEST EXPERIENCES —"
+   - Section Title: "Stories From Our Discerning Travelers"
+   - 3 Testimonial Cards (Amit & Neha Verma, Dr. S. Mukherjee, Pooja & Rajesh Singhania).
+   - DESKTOP: Clean 3-column grid.
+   - MOBILE (SWIPEABLE CAROUSEL):
+     * display: flex with scroll-snap-type: x mandatory.
+     * Cards take 88% width with center snap alignment.
+     * 3 Pagination Dots (#testimonialsDots): Auto-updates on swipe, tap to scroll.
+     * Swipe Hint: "← Swipe to explore reviews →"
+
+5. GRAND LUXURY FOOTER (#footer):
+   - Theme: Signature Deep Royal Navy Blue & Crisp White luxury theme (`background: linear-gradient(180deg, #071a2b 0%, #030d17 100%)`).
+   - 4-column layout:
+     * Brand bio (White title, sky blue subtitle) & Direct WhatsApp contact
+     * Handcrafted destinations (clean muted links with hover shift & glow)
+     * Quick navigation
+     * Personalized Travel assurance citing Founders Abhishek, Anamika & Arun with frosted glassmorphic badge
+   - Bottom bar with copyright and "Back to Home ↑" anchor in royal sky blue.
+
+CRITICAL USER RULE ON index.html:
+* The Owner/Founder section was intentionally REMOVED from index.html.
+* DO NOT add any owner or founder profile section back to index.html!
+* The navbar, mobile drawer, and footer all route to about.html for founders.
+
+--------------------------------------------------------------------------------
+5.2. about.html (About Founders & Leadership)
+--------------------------------------------------------------------------------
+Theme: 100% Blue & White Luxury Atelier (No dark gold or nested box borders).
+
+1. HEADER & HERO:
+   - Dedicated clean white navbar with royal navy links.
+   - Hero (.about-hero): Radial gradient (#e8f2fc to #ffffff).
+   - Title: "Crafting Timeless Journeys, Led by Passion & Precision"
+   - 4 Metric Pills:
+     * 100% Bespoke Itineraries
+     * 5+ Handpicked Nations
+     * 1,200+ Discerning Travelers
+     * 24/7 Direct Founder Access
+
+2. TRIO LEADERSHIP SECTION (.founders-section):
+   - Section Eyebrow: "— THE VISIONARIES BEHIND NISHAMIKA HOLIDAY —"
+   - Horizontal Executive Editorial Cards (.leaders-grid): Left Photo, Right Profile Description & Contacts. (Responsive column on mobile)
+   - Layout Note: .leader-photo uses `position: absolute; inset: 0; object-fit: cover; object-position: center 10%;` to ensure all 3 leader cards have identical uniform height and no vertical dead space regardless of original image aspect ratio.
+   - Leader 1: Abhishek Kumar Srivastava (assets/owner1.png)
+     * Role: Founder & Director
+     * Phone: +91 93898 92213
+     * Email: abhikayasthani@gmail.com
+     * Quote: "True luxury is personalized attention. Every traveler deserves a handcrafted journey planned with uncompromised excellence."
+     * Focus Tags: Bespoke Journeys, VIP Stays, Global Strategy
+   - Leader 2: Anamika Gupta (assets/owner2.png)
+     * Role: Co-Founder
+     * Phone: +91 95698 85345
+     * Email: anikayasthabhi@gmail.com
+     * Quote: "From your first consultation to your journey back home, our mission is to deliver warmth, flawless comfort, and lifelong memories."
+     * Focus Tags: Guest Experience, Boutique Stays, 24/7 Concierge
+   - Leader 3: Arun Shrivastava (assets/owner3.png)
+     * Role: Managing Director
+     * Phone: +91 91514 78150
+     * Quote: "Flawless execution is the backbone of exceptional luxury travel. Punctuality, safety, and attention to detail are our sacred promises."
+     * Focus Tags: Operations & Fleet, Safety Assurance, Tour Logistics
+
+3. FOUNDERS' MANIFESTO (.manifesto-card):
+   - Elevated pure white card with watermark quote ("“").
+   - Explains the philosophy: why Nishamika Holiday avoids generic automated mass tours.
+   - Handwritten signature in Caveat font: "Abhishek Kumar Srivastava, Anamika Gupta & Arun Shrivastava"
+
+4. PILLARS OF DISTINCTION (.pillars-grid):
+   - Desktop: Elegant 4-column luxury card layout (repeat(4, 1fr)).
+   - Mobile: Horizontal touch snap carousel (84% card width, scroll-snap-type: x mandatory).
+   - 4 Pagination dots (#pillarsDots) with auto-sync on swipe & tap-to-scroll.
+   - Swipe hint: "← Swipe to explore pillars →"
+   - 4 White luxury cards:
+     * 01: 100% Tailored Routes
+     * 02: Hand-Inspected Stays
+     * 03: Private Chauffeurs
+     * 04: Direct Founder Line
+
+5. DIRECT CONSULTATION CTA CARD (.consultation-banner):
+   - Deep Royal Navy card (#071a2b) with WhatsApp consultation button.
+
+--------------------------------------------------------------------------------
+5.3. countries/india.html (Country Template - Offline Blueprint)
+--------------------------------------------------------------------------------
+- Status: Unlinked from active navigation and footer (as per user request; all country links smoothly route to #popular-destinations). Retained as an offline template for future destination rollouts (Malaysia, Thailand, Vietnam, India, Nepal).
+- Structure:
+  * Hero banner with assets/india.png background.
+  * Overview of Indian heritage and private travel advantages.
+  * Destination Grid (.sub-dest-grid):
+    - Varanasi (Sacred Ghats & Private Ganga Aarti)
+    - Rajasthan (Udaipur & Jaipur Palaces)
+    - Kerala (Backwaters & Private Houseboats)
+    - Agra & Golden Triangle (Taj Mahal & Mughal Forts)
+  * WhatsApp Booking CTA.
+
+================================================================================
+6. JAVASCRIPT BEHAVIOR & INTERACTIVE ENGINE (script.js)
+================================================================================
+Script is initialized inside `DOMContentLoaded` with the following 7 modules:
+
+1. Mobile Navigation Drawer:
+   - Elements: #mobileMenuToggle, #mobileNavDrawer, #mobileNavClose, #drawerOverlay
+   - Toggles .open class and manages body overflow-y lock.
+
+2. Search Bar Dropdowns & Counter:
+   - Destination Popover: #destField & #destDropdownPopover
+   - Travelers Popover: #travelersField & #travelersDropdownPopover
+   - Counter buttons (.counter-btn) for Adults and Children.
+   - Outside click listener closes all active popovers.
+
+3. Search Action (#searchSubmitBtn):
+   - Shows feedback spinner ("Searching..."), sends a luxury toast, and smoothly scrolls to #popular-destinations.
+
+4. Destination Cards Interactive Sync (.dest-card-box):
+   - Clicking a card updates search bar's destination text and plays card bounce animation.
+
+5. Expanding Accordion (.accordion-panel):
+   - Desktop: 'mouseenter' expands panel (.active class).
+   - Mobile/Desktop: 'click' activates panel.
+
+6. Quick Search Modal & Tags:
+   - #quickSearchModal, opens with shortcut or button, closes on ESC or click-outside.
+
+7. Mobile Testimonials Swipe & Dot Sync:
+   - Listens to horizontal scroll on .testimonials-grid.
+   - Computes center card offset and dynamically toggles .t-dot.active.
+   - Clicking any dot scrolls the corresponding card into view smoothly.
+
+8. About Page Pillars Carousel Swipe & Dot Sync:
+   - Listens to horizontal scroll on .pillars-grid.
+   - Computes center card offset and dynamically toggles .p-dot.active.
+   - Clicking any dot scrolls the corresponding pillar card into view smoothly.
+
+9. Luxury Toast Notification:
+   - `showNotification(msg)`: Spawns a floating pill toast with gold star icon ("✦") at the bottom of the screen.
+
+================================================================================
+7. CSS ARCHITECTURE & RESPONSIVE BREAKPOINTS (styles.css)
+================================================================================
+- Structure:
+  * Lines 1-120: Global CSS Variables, font imports, reset, utility classes.
+  * Lines 120-1300: Navbar, Hero section, Search Bar, Destination cards, Trust bar.
+  * Lines 1300-2270: Modals, dropdowns, drawer menu, search animations.
+  * Lines 2275-2450: Expanding Accordion (.curated-experiences-section) & .curated-bg.
+  * Lines 2720-2820: Testimonials section desktop grid.
+  * Lines 2820-2940: Grand footer.
+  * Lines 2940-3178: Responsive Breakpoints:
+    - @media (max-width: 1180px): Navbar padding & script position adjustments.
+    - @media (max-width: 1024px): Hero auto-height, 3-column tablet reviews.
+    - @media (max-width: 768px):
+      * Universal side padding: .section-container { padding: 0 1.25rem !important; }
+      * Testimonials: display: flex; scroll-snap-type: x mandatory; 88% card width.
+      * Accordion: Vertical layout with expanding card height.
+      * Search bar: Stacked full-width inputs with 100% width popovers.
+
+================================================================================
+8. CRITICAL RULES & INVIOLABLE CONSTRAINTS FOR FUTURE AI SESSIONS
+================================================================================
+If you are an AI assistant working on this codebase, ALWAYS obey these strict rules:
+
+RULE 1: NO FOUNDERS ON HOME PAGE (`index.html`)
+The user explicitly instructed: "ONWER SECTION KO HOME PAGES REMOVE HI KARDE BRO BAS HAM ABOUT ME HI RAKHEGE BAS".
+Never add the owner or founder section back to index.html. It exists ONLY in about.html.
+
+RULE 2: STRICT BLUE & WHITE LUXURY THEME
+The user explicitly instructed: "HAMRI WEBISTE KA THEME BLUE AND WHITE HAI LIKE HOME PAGES , USKI TARAH KAR DEGA ISS FOUNDER KE SECTION KO".
+Always use:
+- Backgrounds: Pure White (#ffffff) or soft ice blue wash (#f4f8fc).
+- Text/Headers: Deep Royal Navy (#071a2b).
+- Accents: Sapphire Blue (#1d4ed8 / #2563eb).
+NEVER use dark muddy boxes, gold borders around whole sections, or nested "box-in-a-box" layouts.
+
+RULE 3: MAINTAIN ALL 3 DIRECTORS / LEADERS
+Always include all 3 leaders in about.html and footer citations:
+1. Abhishek Kumar Srivastava — Founder & Director (assets/owner1.png | +91 93898 92213 | abhikayasthani@gmail.com)
+2. Anamika Gupta — Co-Founder (assets/owner2.png | +91 95698 85345 | anikayasthabhi@gmail.com)
+3. Arun Shrivastava — Managing Director (assets/owner3.png | +91 91514 78150)
+
+RULE 4: NO ONLINE PAYMENT GATEWAYS
+The business operates exclusively on custom consultation and direct WhatsApp communication.
+Do not integrate Stripe, Razorpay, or automated cart checkouts.
+
+RULE 5: PRESERVE MOBILE-FIRST INTEGRITY
+- Test all components under <= 768px.
+- Prevent horizontal scroll overflows (overflow-x: hidden on body).
+- .testimonials-grid must remain a swipeable horizontal carousel with snap scrolling and pagination dots on mobile.
+- .expanding-accordion must remain vertical on mobile.
+
+RULE 6: PRESERVE travel_styles_bg.png FOR TRAVEL STYLES
+The section "Crafted For Every Style of Travel" (#curated-experiences) uses assets/travel_styles_bg.png with .curated-overlay.
+Do not delete or overwrite this background.
+
+================================================================================
+9. STEP-BY-STEP PROMPTING GUIDE FOR FUTURE DEVELOPERS & AGENTS
+================================================================================
+When prompting an AI to make changes to this repository, copy and paste this prompt:
+
+"Hey AI, please read `PROJECT_MASTER_DOCUMENTATION.txt` in the root folder before doing anything. 
+This is a luxury travel website for 'Nishamika Holiday' directed by Abhishek Kumar Srivastava, Anamika Gupta & Arun Shrivastava. 
+Follow the strict Blue & White theme, do not put owner sections on index.html (only in about.html), 
+ensure 100% mobile responsiveness, and do not add any payment gateways. Here is what I want to change: [YOUR CHANGE HERE]"
+
+================================================================================
+END OF DOCUMENTATION
+================================================================================
+
