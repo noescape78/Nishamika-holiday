@@ -175,9 +175,9 @@ Contains 5 primary sections:
    - Section Eyebrow: "— TOP DESTINATIONS —"
    - Section Title: "Explore Our Popular Destinations"
    - 6 Destination Cards (Malaysia, Thailand, Vietnam, India, Nepal, Dubai):
-     * Desktop: 3x2 symmetrical luxury grid (3 columns x 2 rows, repeat(3, 1fr)).
-     * Tablet: 2 columns (repeat(2, 1fr)).
-     * Mobile (<= 768px): Horizontal touch swipeable snap carousel.
+     * Desktop (>= 1100px): Sleek 1-row horizontal layout (repeat(6, 1fr), height: 295px) matching the original compact luxury look.
+     * Mid-Screens (769px - 1099px): Smooth horizontal swipe carousel (215px card width).
+     * Mobile (<= 768px): Horizontal touch swipe snap carousel (230px card width).
      * All cards use interactive selection arrow buttons syncing with search bar and scroll.
      * Controlled modularly via destinations.css.
    - Trust Feature Strip (#trust-features): 4 glass pillars
