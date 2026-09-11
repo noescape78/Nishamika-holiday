@@ -1,0 +1,705 @@
+/* ==========================================================================
+   DUBAI & ABU DHABI DESTINATION STYLESHEET (dubai.css)
+   Clean, Understated & Dignified Luxury Travel Aesthetic
+   ========================================================================== */
+
+:root {
+  --dubai-navy: #071a2b;
+  --dubai-navy-deep: #030d17;
+  --dubai-blue: #1d4ed8;
+  --dubai-blue-light: #2563eb;
+  --dubai-sky: #60a5fa;
+  --dubai-ice: #f1f5f9;
+  --dubai-slate: #475569;
+  --dubai-slate-light: #94a3b8;
+  --dubai-border: #e2e8f0;
+  --dubai-white: #ffffff;
+}
+
+body {
+  background-color: #f8fafc;
+  color: var(--dubai-navy);
+  font-family: var(--font-sans, 'Plus Jakarta Sans', sans-serif);
+  overflow-x: hidden;
+}
+
+/* 1. Header & Navigation */
+.dubai-header {
+  width: 100%;
+  padding: 1.2rem 2rem 0;
+  background: var(--dubai-white);
+  border-bottom: 1px solid var(--dubai-border);
+}
+
+.dubai-header .navbar {
+  background: rgba(255, 255, 255, 0.96) !important;
+  border: 1px solid var(--dubai-border) !important;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.04) !important;
+}
+
+.dubai-header .brand-title {
+  color: var(--dubai-navy) !important;
+}
+
+.dubai-header .nav-link {
+  color: var(--dubai-slate) !important;
+}
+
+.dubai-header .nav-link:hover,
+.dubai-header .nav-link.active {
+  color: var(--dubai-blue) !important;
+}
+
+/* 2. Hero Section */
+.dubai-hero {
+  position: relative;
+  padding: 4.5rem 1.5rem 3.8rem;
+  background: radial-gradient(ellipse at 50% -10%, #e8f2fc 0%, #f4f8fc 45%, #ffffff 85%);
+  text-align: center;
+  border-bottom: 1px solid var(--dubai-border);
+}
+
+.dubai-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 1.2rem;
+  background: rgba(37, 99, 235, 0.08);
+  border: 1px solid rgba(37, 99, 235, 0.22);
+  border-radius: 9999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--dubai-blue);
+  margin-bottom: 1.2rem;
+}
+
+.dubai-hero-title {
+  font-family: var(--font-serif, 'Playfair Display', serif);
+  font-size: clamp(2.2rem, 4.5vw, 3.6rem);
+  font-weight: 700;
+  color: var(--dubai-navy);
+  line-height: 1.18;
+  max-width: 900px;
+  margin: 0 auto 1.1rem;
+  letter-spacing: -0.01em;
+}
+
+.dubai-hero-title span {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 700;
+  color: var(--dubai-blue);
+}
+
+.dubai-hero-desc {
+  max-width: 740px;
+  margin: 0 auto 2.2rem;
+  font-size: 1.02rem;
+  color: var(--dubai-slate);
+  line-height: 1.7;
+}
+
+/* Quick Facts Strip */
+.dubai-facts-strip {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1.2rem 1.8rem;
+  background: var(--dubai-white);
+  border: 1px solid var(--dubai-border);
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(7, 26, 43, 0.04);
+}
+
+.fact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-align: left;
+}
+
+.fact-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #eff6ff;
+  border: 1px solid #dbeafe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: var(--dubai-blue);
+  flex-shrink: 0;
+}
+
+.fact-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--dubai-slate-light);
+}
+
+.fact-value {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--dubai-navy);
+}
+
+.fact-divider {
+  width: 1px;
+  height: 32px;
+  background: var(--dubai-border);
+}
+
+/* 3. Section Container & Filter Bar */
+.dubai-content-section {
+  padding: 4rem 0 5.5rem;
+}
+
+.filter-bar-wrapper {
+  position: sticky;
+  top: 1rem;
+  z-index: 40;
+  margin-bottom: 2.8rem;
+  display: flex;
+  justify-content: center;
+}
+
+.filter-bar {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.45rem 0.6rem;
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--dubai-border);
+  border-radius: 9999px;
+  box-shadow: 0 8px 26px rgba(7, 26, 43, 0.06);
+  max-width: 100%;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.filter-bar::-webkit-scrollbar {
+  display: none;
+}
+
+.filter-btn {
+  padding: 0.5rem 1.15rem;
+  border-radius: 9999px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--dubai-slate);
+  background: transparent;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  white-space: nowrap;
+}
+
+.filter-btn:hover {
+  color: var(--dubai-navy);
+  background: #f1f5f9;
+}
+
+.filter-btn.active {
+  color: var(--dubai-white);
+  background: var(--dubai-navy);
+  border-color: var(--dubai-navy);
+  box-shadow: 0 4px 14px rgba(7, 26, 43, 0.18);
+}
+
+/* 4. Attractions & Excursions Grid */
+.spots-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.spot-card {
+  background: var(--dubai-white);
+  border: 1px solid var(--dubai-border);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(7, 26, 43, 0.04);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), 
+              box-shadow 0.35s ease, 
+              border-color 0.35s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.spot-card:hover {
+  transform: translateY(-6px);
+  border-color: #93c5fd;
+  box-shadow: 0 16px 36px rgba(7, 26, 43, 0.1);
+}
+
+.spot-img-wrap {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  background: #071a2b;
+  overflow: hidden;
+}
+
+.spot-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.spot-card:hover .spot-img {
+  transform: scale(1.05);
+}
+
+.spot-badge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 2;
+  padding: 0.35rem 0.85rem;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 9999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--dubai-navy);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.spot-badge.excursion {
+  background: rgba(7, 26, 43, 0.9);
+  color: #60a5fa;
+  border: 1px solid rgba(96, 165, 250, 0.3);
+}
+
+/* Card Body */
+.spot-body {
+  padding: 1.6rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.spot-meta-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.6rem;
+}
+
+.spot-location {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--dubai-blue);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.spot-title {
+  font-family: var(--font-serif, 'Playfair Display', serif);
+  font-size: 1.28rem;
+  font-weight: 700;
+  color: var(--dubai-navy);
+  line-height: 1.28;
+  margin: 0 0 0.65rem;
+}
+
+.spot-desc {
+  font-size: 0.88rem;
+  color: var(--dubai-slate);
+  line-height: 1.62;
+  margin: 0 0 1.2rem;
+  flex: 1;
+}
+
+/* Highlights Tags */
+.spot-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-bottom: 1.4rem;
+}
+
+.spot-pill {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--dubai-slate);
+  background: #f1f5f9;
+  padding: 0.3rem 0.75rem;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+}
+
+/* Actions Row */
+.spot-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid var(--dubai-border);
+}
+
+.btn-details {
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.65rem 1rem;
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--dubai-navy);
+  cursor: pointer;
+  transition: all 0.25s ease;
+  text-decoration: none;
+}
+
+.btn-details:hover {
+  background: var(--dubai-navy);
+  border-color: var(--dubai-navy);
+  color: var(--dubai-white);
+}
+
+.btn-video {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  padding: 0.65rem 1rem;
+  background: rgba(37, 99, 235, 0.08);
+  border: 1px solid rgba(37, 99, 235, 0.25);
+  border-radius: 10px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--dubai-blue);
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.btn-video:hover {
+  background: var(--dubai-blue);
+  color: var(--dubai-white);
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.3);
+}
+
+.btn-wa-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: #25d366;
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  text-decoration: none;
+}
+
+.btn-wa-icon:hover {
+  background: #1ebc59;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+}
+
+/* 5. In-Website Video Modal */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(7, 26, 43, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.video-modal-card {
+  position: relative;
+  width: 100%;
+  max-width: 860px;
+  background: #030d17;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
+  transform: scale(0.95);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.modal-overlay.active .video-modal-card {
+  transform: scale(1);
+}
+
+.video-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.1rem 1.5rem;
+  background: #071a2b;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+.video-modal-title {
+  font-family: var(--font-serif, 'Playfair Display', serif);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.modal-close-btn {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.modal-close-btn:hover {
+  background: #ef4444;
+  border-color: #ef4444;
+}
+
+.video-frame-wrap {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 ratio */
+  height: 0;
+  background: #000000;
+}
+
+.video-frame-wrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* 6. Quick View Detail Modal */
+.detail-modal-card {
+  position: relative;
+  width: 100%;
+  max-width: 680px;
+  background: #ffffff;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 25px 60px rgba(7, 26, 43, 0.25);
+  transform: scale(0.95);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-overlay.active .detail-modal-card {
+  transform: scale(1);
+}
+
+.detail-modal-img-wrap {
+  position: relative;
+  width: 100%;
+  height: 260px;
+  background: #071a2b;
+}
+
+.detail-modal-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.detail-modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 5;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(7, 26, 43, 0.7);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.detail-modal-close:hover {
+  background: #ef4444;
+}
+
+.detail-modal-content {
+  padding: 1.8rem 2rem;
+  overflow-y: auto;
+}
+
+.detail-modal-tag {
+  font-size: 0.74rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--dubai-blue);
+  margin-bottom: 0.4rem;
+}
+
+.detail-modal-name {
+  font-family: var(--font-serif, 'Playfair Display', serif);
+  font-size: 1.65rem;
+  font-weight: 700;
+  color: var(--dubai-navy);
+  margin-bottom: 0.9rem;
+}
+
+.detail-modal-desc {
+  font-size: 0.92rem;
+  color: var(--dubai-slate);
+  line-height: 1.7;
+  margin-bottom: 1.4rem;
+}
+
+.detail-features-box {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 1.2rem 1.4rem;
+  margin-bottom: 1.6rem;
+}
+
+.detail-feature-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.86rem;
+  color: var(--dubai-navy);
+  margin-bottom: 0.6rem;
+}
+
+.detail-feature-row:last-child {
+  margin-bottom: 0;
+}
+
+.detail-feature-row span.icon {
+  color: var(--dubai-blue);
+  font-size: 1rem;
+}
+
+.detail-modal-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  width: 100%;
+  padding: 0.85rem 1.4rem;
+  background: #25d366;
+  border-radius: 12px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.92rem;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  box-shadow: 0 6px 18px rgba(37, 211, 102, 0.28);
+}
+
+.detail-modal-cta:hover {
+  background: #1ebc59;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.38);
+}
+
+/* 7. Responsive Breakpoints */
+@media (max-width: 1024px) {
+  .spots-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .dubai-header {
+    padding: 1rem 1rem 0;
+  }
+
+  .dubai-hero {
+    padding: 3.5rem 1rem 2.8rem;
+  }
+
+  .dubai-hero-title {
+    font-size: 2.1rem;
+  }
+
+  .dubai-facts-strip {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.2rem;
+    gap: 1rem;
+  }
+
+  .fact-divider {
+    display: none;
+  }
+
+  .spots-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .filter-bar {
+    justify-content: flex-start;
+    border-radius: 14px;
+    padding: 0.4rem;
+  }
+
+  .video-modal-card,
+  .detail-modal-card {
+    max-width: 100%;
+    border-radius: 16px;
+  }
+}

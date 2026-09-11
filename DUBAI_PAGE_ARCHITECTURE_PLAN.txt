@@ -1,0 +1,131 @@
+================================================================================
+  NISHAMIKA HOLIDAY — DUBAI & ABU DHABI ATTRACTIONS & EXCURSIONS BLUEPRINT
+================================================================================
+Document: DUBAI_PAGE_ARCHITECTURE_PLAN.txt
+Updated: September 2026
+Client Phone: +91 91514 78150 (Arun Shrivastava / Client Directorate)
+
+--------------------------------------------------------------------------------
+1. CLIENT'S ORIGINAL REQUIREMENT & VISION
+--------------------------------------------------------------------------------
+"Agar destination pe click kare to uske andar waha ka attraction dikhe aur uska 
+excursion bhi dikhe ye time lagega lekin jaruri aara se karo one by one country 
+ka karo. Aur excursion pe click kare to uska youtube link open ho aisa ho sakta 
+hai kya..."
+
+Raw Spots List from Client:
+- Dubai city tour
+- Marina dhow cruise with dinner
+- Burj khalifa
+- Dubai mall
+- Fountain show
+- Global village
+- Miracle Garden
+- Heritage city
+- Desert safari with BBQ Dinner
+- Dune Bashing
+- Quad Bike
+- Camel riding
+- Aya universe
+- Dubai park and resort
+- Museum of the Future
+- Green planet
+- Abu Dhabi city tour
+- BAPS Temple Abu Dhabi
+- Sheikh Zayed Mosque
+- National museum Abu Dhabi
+- Butterfly Garden
+- Yas Island
+- Jetski
+- Qasr Al Watan (Presidential Palace)
+
+--------------------------------------------------------------------------------
+2. SMART PROFESSIONAL CATEGORIZATION (23 SPOTS GROUPED FOR LUXURY UX)
+--------------------------------------------------------------------------------
+Agar hum 23 items ek sath lambi list me fek denge toh website cluttered lagegi.
+Isliye inko 5 Elegant Luxury Categories me filterable banayenge:
+
+CATEGORY 1: ICONIC DUBAI CITY TOUR & LANDMARKS
+  1. Burj Khalifa (At The Top VIP Observatory)
+  2. The Dubai Mall & Spectacular Dubai Fountain Show
+  3. Museum of the Future (Architectural Marvel)
+  4. Heritage City & Historic Al Fahidi Bastakiya
+  5. Dubai Frame & Modern Skyline
+
+CATEGORY 2: DESERT SAFARI & ARABIAN ADVENTURES (EXCURSION PACK)
+  6. Premium Red Dunes Desert Safari with 5-Star BBQ Dinner
+  7. 4x4 Dune Bashing on Lahbab Dunes
+  8. Desert Quad Biking & Dune Buggies
+  9. Traditional Sunset Camel Riding & Falconry
+
+CATEGORY 3: MARINA, CRUISES & WATER ADVENTURES
+  10. Dubai Marina Luxury Dhow Cruise with Dinner & Live Tanoura
+  11. High-Speed Gulf Jetski Excursion (Burj Al Arab View)
+
+CATEGORY 4: WONDER GARDENS & ENTERTAINMENT WORLDS
+  12. Dubai Miracle Garden (World's Largest Natural Flower Garden)
+  13. Dubai Butterfly Garden
+  14. AYA Universe (Interactive Light & Sound Odyssey)
+  15. The Green Planet (Bio-Dome Tropical Rainforest)
+  16. Dubai Parks and Resorts (Motiongate, Legoland)
+  17. Global Village (Multi-Cultural World Pavilions)
+
+CATEGORY 5: GRAND ABU DHABI DAY EXCURSION (CAPITAL EXPEDITION)
+  18. Abu Dhabi Full-Day Private Tour
+  19. Sheikh Zayed Grand Mosque (World Architectural Masterpiece)
+  20. BAPS Hindu Mandir Abu Dhabi (Historic Hand-Carved Stone Temple)
+  21. Qasr Al Watan (The Presidential Palace of UAE)
+  22. National Museum / Louvre Abu Dhabi
+  23. Yas Island (Ferrari World, Warner Bros, Yas Marina Circuit)
+
+--------------------------------------------------------------------------------
+3. EXCURSION CARDS & IN-WEBSITE YOUTUBE VIDEO PLAYER
+--------------------------------------------------------------------------------
+- Har Excursion card ke upar ek sleek "▶ Watch Experience Video" button rahega.
+- Client Requirement: "excursion pe click kare to uska youtube link open ho"
+- Execution:
+  * Jab user "Watch Video" dabayega, toh website ke andar hi ek dark frosted-glass 
+    luxury modal popup khulega.
+  * Video website ke andar bina redirect hue smooth play hogi.
+  * (✕ Close) dabane par video stop aur pause ho jayegi.
+  * User website par hi bana rahega, bounce rate zero hoga!
+
+--------------------------------------------------------------------------------
+4. INTERACTIVE ATTRACTION QUICK-VIEW MODAL (ZERO RELOAD)
+--------------------------------------------------------------------------------
+- Har attraction card par click karne par koi naya page nahi khulega.
+- Usi page par ek sleek drawer / popup khulega with:
+  * HD Image
+  * Ideal Duration & Best Hours (e.g. Sunset / Evening)
+  * What's Included / Highlights (e.g. VIP entry, transfers)
+  * Dedicated WhatsApp CTA: 
+    "Hi Nishamika Holiday! I want to include [Spot Name] in my Dubai holiday."
+- Pricing: Currently HIDDEN as requested. Structured with hidden data attributes 
+  so client can enable pricing later whenever ready.
+
+--------------------------------------------------------------------------------
+5. EXACT REQUIREMENTS NEEDED (AAPKO KYA CHAHIYE HOGA):
+--------------------------------------------------------------------------------
+A. YOUTUBE VIDEO LINKS:
+   - Excursions ke liye 1 ya 2 official high-quality YouTube links (jaise Desert Safari 
+     preview ya Dubai Tourism video).
+   - *Note:* Agar abhi link nahi hai, toh hum Dubai Tourism official 4K video ka default 
+     link daal denge, jisko client baad me 1 minute me change kar sakega!
+
+B. IMAGES:
+   - Client agar specific photos de sake toh achha hai.
+   - NAHI TOH: Hum saare 23 spots ke world-class vetted high-res official images 
+     khud setup kar denge.
+
+C. CLIENT CONFIRMATION:
+   - Ek country (Dubai) complete karenge pehle, client ko dikhayenge.
+   - Client approve karega, toh yahi template baaki countries (Thailand, Malaysia, 
+     Vietnam, Nepal) me one-by-one scale karenge!
+
+--------------------------------------------------------------------------------
+6. MODULAR FILE ARCHITECTURE
+--------------------------------------------------------------------------------
+1. dubai.html         <- Complete page layout with Hero, Filters, 23 Cards, Video Modal.
+2. dubai.css          <- Dedicated modular CSS (no pollution to styles.css).
+3. dubai.js           <- Lightweight video popup, category filter & modal logic.
+================================================================================
