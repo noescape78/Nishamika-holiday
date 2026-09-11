@@ -333,16 +333,16 @@ body {
   line-height: 1.7;
 }
 
-/* Quick Facts Strip */
+/* Quick Facts Strip (Perfect 1-line balanced row on Laptop/Desktop) */
 .dubai-facts-strip {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  max-width: 960px;
+  flex-wrap: nowrap;
+  gap: 1.2rem;
+  max-width: 1080px;
   margin: 0 auto;
-  padding: 1.2rem 1.8rem;
+  padding: 1.1rem 2rem;
   background: var(--dubai-white);
   border: 1px solid var(--dubai-border);
   border-radius: 18px;
@@ -354,6 +354,15 @@ body {
   align-items: center;
   gap: 0.75rem;
   text-align: left;
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.fact-divider {
+  width: 1px;
+  height: 36px;
+  background: var(--dubai-border);
+  flex-shrink: 0;
 }
 
 .fact-icon {
@@ -978,6 +987,18 @@ body {
   .spots-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
+  }
+
+  .dubai-facts-strip {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem 2rem;
+    max-width: 680px;
+    padding: 1.4rem 1.8rem;
+  }
+
+  .dubai-facts-strip .fact-divider {
+    display: none;
   }
 }
 
