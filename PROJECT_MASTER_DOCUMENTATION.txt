@@ -33,12 +33,13 @@ TABLE OF CONTENTS
   * "Travel More, Worry Less"
 - BUSINESS DOMAIN: Ultra-luxury, bespoke, and personalized international travel curations.
 - OFFICIAL GITHUB REPOSITORY: https://github.com/noescape78/Nishamika-holiday
-- TARGET DESTINATIONS:
+- TARGET DESTINATIONS (6 KEY HUBS):
   * Malaysia (Kuala Lumpur, Langkawi, Penang)
   * Thailand (Bangkok, Phuket, Krabi)
   * Vietnam (Hanoi, Ha Long Bay, Da Nang, Hoi An)
   * India (Varanasi, Rajasthan/Udaipur, Kerala, Agra)
   * Nepal (Kathmandu, Pokhara, Himalayas)
+  * Dubai (Burj Khalifa, Desert Safaris, Futuristic Luxury)
 - LEADERSHIP & FOUNDERS:
   1. Abhishek Kumar Srivastava — Founder & Director
      * Photo: assets/owner1.png
@@ -91,6 +92,7 @@ c:\Users\DELL\Desktop\_backup\
 ├── index.html                       <- Main landing page
 ├── about.html                       <- Dedicated Founders & Leadership page
 ├── styles.css                       <- Master stylesheet (3,100+ lines, fully responsive)
+├── destinations.css                 <- Modular stylesheet for Popular Destinations (6-card grid & carousel)
 ├── script.js                        <- Master JS interactivity engine
 ├── PROJECT_MASTER_DOCUMENTATION.txt <- This documentation file
 ├── USE.png                          <- Root copy of hero background
@@ -98,6 +100,7 @@ c:\Users\DELL\Desktop\_backup\
 ├── countries\
 │   └── india.html                   <- Detailed destination guide for India
 └── assets\
+    ├── dubai.png                    <- High-res Dubai Burj Khalifa sunset card image
     ├── logo.jpeg                    <- Official circular Nishamika Holiday logo
     ├── owner1.png                   <- Abhishek Kumar Srivastava (Founder & Director)
     ├── owner2.png                   <- Anamika Gupta (Co-Founder)
@@ -171,9 +174,12 @@ Contains 5 primary sections:
    - Background: assets/USE2.png with soft white lighting overlay.
    - Section Eyebrow: "— TOP DESTINATIONS —"
    - Section Title: "Explore Our Popular Destinations"
-   - 5 Destination Cards (Malaysia, Thailand, Vietnam, India, Nepal):
+   - 6 Destination Cards (Malaysia, Thailand, Vietnam, India, Nepal, Dubai):
+     * Desktop: 3x2 symmetrical luxury grid (3 columns x 2 rows, repeat(3, 1fr)).
+     * Tablet: 2 columns (repeat(2, 1fr)).
+     * Mobile (<= 768px): Horizontal touch swipeable snap carousel.
      * All cards use interactive selection arrow buttons syncing with search bar and scroll.
-     * Unlinked from individual subpages until future multi-country release.
+     * Controlled modularly via destinations.css.
    - Trust Feature Strip (#trust-features): 4 glass pillars
      * Curated Experiences
      * Personalized Guidance

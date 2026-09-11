@@ -1,0 +1,96 @@
+/* ==========================================================================
+   DESTINATIONS MODULE (destinations.css)
+   Modular styling for Popular Destinations Section & Country Cards
+   ========================================================================== */
+
+/* 6-Card Symmetrical Grid for Desktop (3 Columns x 2 Rows) */
+.dest-cards-row {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 1.5rem !important;
+  width: 100% !important;
+}
+
+/* Luxury Destination Card Enhancements */
+.dest-card-box {
+  position: relative;
+  height: 320px;
+  border-radius: 22px;
+  overflow: hidden;
+  cursor: pointer;
+  background: #08213d;
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  box-shadow: 0 14px 34px rgba(8, 33, 61, 0.14);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), 
+              box-shadow 0.35s ease, 
+              border-color 0.35s ease;
+  outline: none;
+}
+
+.dest-card-box:hover,
+.dest-card-box:focus-visible {
+  transform: translateY(-8px) scale(1.015);
+  border-color: #2563eb;
+  box-shadow: 0 22px 48px rgba(7, 26, 43, 0.22);
+}
+
+.dest-card-box:hover .dest-card-img {
+  transform: scale(1.08);
+}
+
+.dest-card-box:hover .dest-card-arrow {
+  background: #2563eb;
+  color: #ffffff;
+  transform: scale(1.08) rotate(-45deg);
+  border-color: #2563eb;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.4);
+}
+
+/* Specific framing for Dubai Burj Khalifa sunset skyline */
+.dest-card-box[data-dest="Dubai"] .dest-card-img {
+  object-position: 72% center;
+}
+
+/* Tablet Viewport (1024px down to 769px) */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .dest-cards-row {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1.25rem !important;
+  }
+  .dest-card-box {
+    height: 300px;
+  }
+}
+
+/* Mobile Viewport (<= 768px): Horizontal Touch Snap Carousel */
+@media (max-width: 768px) {
+  .dest-cards-carousel-wrapper {
+    margin: 0 -1rem !important;
+    padding: 0 !important;
+    overflow: visible !important;
+  }
+
+  .dest-cards-row {
+    display: flex !important;
+    flex-direction: row !important;
+    overflow-x: auto !important;
+    scroll-snap-type: x mandatory !important;
+    -webkit-overflow-scrolling: touch !important;
+    gap: 0.95rem !important;
+    padding: 0.5rem 1rem 1.25rem !important;
+    scrollbar-width: none !important;
+  }
+
+  .dest-cards-row::-webkit-scrollbar {
+    display: none !important;
+  }
+
+  .dest-card-box {
+    flex: 0 0 255px !important;
+    min-width: 255px !important;
+    max-width: 255px !important;
+    height: 310px !important;
+    scroll-snap-align: start !important;
+    border-radius: 20px !important;
+  }
+}
