@@ -38,12 +38,18 @@
       </ul>
 
       <div class="nav-actions">
+        <!-- Direct Quick Back Button (Always visible on mobile & desktop) -->
+        <a href="index.html" class="nav-back-pill" aria-label="Return to Nishamika Holiday Home">
+          <span class="back-arrow">&#8592;</span>
+          <span class="back-text">Home</span>
+        </a>
+
         <a href="https://wa.me/919389892213?text=Hi%20Nishamika%20Holiday%2C%20I%20would%20like%20to%20plan%20a%20private%20Dubai%20itinerary." class="cta-pill-btn" target="_blank" rel="noopener">
           <span>Plan Itinerary &rarr;</span>
         </a>
 
         <!-- Mobile Hamburger Toggle -->
-        <button type="button" class="mobile-hamburger" id="hamburgerBtn" aria-label="Toggle Navigation Menu" aria-expanded="false">
+        <button type="button" class="mobile-hamburger" id="hamburgerBtn" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="mobileDrawer">
           <span class="ham-bar"></span>
           <span class="ham-bar"></span>
         </button>
@@ -65,15 +71,19 @@
         <button type="button" class="drawer-close" id="drawerCloseBtn" aria-label="Close Navigation Menu">&times;</button>
       </div>
       <ul class="mobile-nav-links">
-        <li><a href="index.html" class="mobile-nav-link">Home</a></li>
-        <li><a href="index.html#popular-destinations" class="mobile-nav-link active">Destinations</a></li>
-        <li><a href="index.html#curated-experiences" class="mobile-nav-link">Experiences</a></li>
+        <li><a href="index.html" class="mobile-nav-link">&#8592; Back to Home</a></li>
+        <li><a href="index.html#popular-destinations" class="mobile-nav-link">All Destinations</a></li>
+        <li><a href="dubai.html" class="mobile-nav-link active">Dubai &amp; Abu Dhabi (Current)</a></li>
+        <li><a href="index.html#curated-experiences" class="mobile-nav-link">Curated Experiences</a></li>
         <li><a href="about.html" class="mobile-nav-link">About Founders</a></li>
         <li><a href="index.html#trust-features" class="mobile-nav-link">Why Nishamika</a></li>
       </ul>
       <div class="mobile-drawer-cta">
-        <a href="https://wa.me/919389892213?text=Hi%20Nishamika%20Holiday%2C%20I%20would%20like%20to%20plan%20a%20private%20Dubai%20itinerary." class="cta-pill-btn full-width" target="_blank" rel="noopener">
-          <span>Plan Itinerary &rarr;</span>
+        <a href="index.html" class="cta-pill-btn full-width" style="margin-bottom: 0.8rem;">
+          <span>&#8592; Return to Home</span>
+        </a>
+        <a href="https://wa.me/919389892213?text=Hi%20Nishamika%20Holiday%2C%20I%20would%20like%20to%20plan%20a%20private%20Dubai%20itinerary." class="cta-pill-btn full-width" target="_blank" rel="noopener" style="background: #25d366; border-color: #25d366; color: #ffffff;">
+          <span>WhatsApp Inquiry &rarr;</span>
         </a>
       </div>
     </div>

@@ -29,16 +29,42 @@ document.addEventListener('DOMContentLoaded', () => {
   const closeDetailBtn = document.getElementById('closeDetailModal');
   const detailTriggers = document.querySelectorAll('.btn-details');
 
-  // Mobile Menu Toggle (matching main navbar)
-  const menuToggle = document.querySelector('.menu-toggle');
-  const navMenu = document.querySelector('.nav-menu');
+  // Mobile Drawer Toggle
+  const hamburgerBtn = document.getElementById('hamburgerBtn');
+  const mobileDrawer = document.getElementById('mobileDrawer');
+  const drawerCloseBtn = document.getElementById('drawerCloseBtn');
+  const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
 
-  if (menuToggle && navMenu) {
-    menuToggle.addEventListener('click', () => {
-      menuToggle.classList.toggle('active');
-      navMenu.classList.toggle('active');
+  function openDrawer() {
+    if (!mobileDrawer) return;
+    mobileDrawer.classList.add('open');
+    mobileDrawer.setAttribute('aria-hidden', 'false');
+    if (hamburgerBtn) hamburgerBtn.setAttribute('aria-expanded', 'true');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeDrawer() {
+    if (!mobileDrawer) return;
+    mobileDrawer.classList.remove('open');
+    mobileDrawer.setAttribute('aria-hidden', 'true');
+    if (hamburgerBtn) hamburgerBtn.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  }
+
+  if (hamburgerBtn) hamburgerBtn.addEventListener('click', openDrawer);
+  if (drawerCloseBtn) drawerCloseBtn.addEventListener('click', closeDrawer);
+
+  if (mobileDrawer) {
+    mobileDrawer.addEventListener('click', (e) => {
+      if (e.target === mobileDrawer) {
+        closeDrawer();
+      }
     });
   }
+
+  mobileNavLinks.forEach(link => {
+    link.addEventListener('click', closeDrawer);
+  });
 
   // --------------------------------------------------------------------------
   // 2. Category Filter System
@@ -230,6 +256,9 @@ document.addEventListener('DOMContentLoaded', () => {
   // --------------------------------------------------------------------------
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
+      if (mobileDrawer && mobileDrawer.classList.contains('open')) {
+        closeDrawer();
+      }
       if (videoModal && videoModal.classList.contains('active')) {
         closeVideoModalFunc();
       }
