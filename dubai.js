@@ -1,4 +1,4 @@
-﻿/**
+/**
  * NISHAMIKA HOLIDAY — DUBAI & ABU DHABI EXPERIENCE (dubai.js)
  * High-performance, modular scripts for category filtering, 
  * in-website YouTube modal player, and quick-view destination drawer.
@@ -43,7 +43,9 @@ document.addEventListener('DOMContentLoaded', () => {
   // --------------------------------------------------------------------------
   // 2. Category Filter System
   // --------------------------------------------------------------------------
-  if (filterBtns.length > 0 && spotCards.length > 0) {
+  const categorySections = document.querySelectorAll('.category-section');
+
+  if (filterBtns.length > 0) {
     filterBtns.forEach(btn => {
       btn.addEventListener('click', () => {
         // Update active class
@@ -52,22 +54,46 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const filterValue = btn.getAttribute('data-filter') || 'all';
 
-        spotCards.forEach(card => {
-          const category = card.getAttribute('data-category');
-          if (filterValue === 'all' || category === filterValue) {
-            card.style.display = 'flex';
-            // Slight fade in effect
-            card.style.opacity = '0';
-            card.style.transform = 'translateY(12px)';
-            requestAnimationFrame(() => {
-              card.style.transition = 'opacity 0.35s ease, transform 0.35s ease';
-              card.style.opacity = '1';
-              card.style.transform = 'translateY(0)';
-            });
-          } else {
-            card.style.display = 'none';
+        // Toggle category sections if present
+        if (categorySections.length > 0) {
+          categorySections.forEach(sec => {
+            const secCat = sec.getAttribute('data-category');
+            if (filterValue === 'all' || secCat === filterValue) {
+              sec.style.display = 'block';
+              sec.style.opacity = '0';
+              requestAnimationFrame(() => {
+                sec.style.transition = 'opacity 0.35s ease';
+                sec.style.opacity = '1';
+              });
+            } else {
+              sec.style.display = 'none';
+            }
+          });
+
+          // If on mobile and a specific category was clicked, smoothly scroll to it
+          if (filterValue !== 'all' && window.innerWidth <= 768) {
+            const targetSec = document.querySelector(`.category-section[data-category="${filterValue}"]`);
+            if (targetSec) {
+              const yOffset = -75; // Account for sticky filter bar
+              const y = targetSec.getBoundingClientRect().top + window.pageYOffset + yOffset;
+              window.scrollTo({ top: y, behavior: 'smooth' });
+            }
           }
-        });
+        } else if (spotCards.length > 0) {
+          spotCards.forEach(card => {
+            const category = card.getAttribute('data-category');
+            if (filterValue === 'all' || category === filterValue) {
+              card.style.display = 'flex';
+              card.style.opacity = '0';
+              requestAnimationFrame(() => {
+                card.style.transition = 'opacity 0.35s ease';
+                card.style.opacity = '1';
+              });
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        }
       });
     });
   }

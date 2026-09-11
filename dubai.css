@@ -217,7 +217,70 @@ body {
   box-shadow: 0 4px 14px rgba(7, 26, 43, 0.18);
 }
 
-/* 4. Attractions & Excursions Grid */
+/* 4. Attractions & Excursions Categorized Layout */
+.category-section {
+  margin-bottom: 4.2rem;
+  transition: opacity 0.35s ease;
+}
+
+.category-section:last-child {
+  margin-bottom: 1.5rem;
+}
+
+.category-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  padding-bottom: 0.9rem;
+  border-bottom: 1px solid var(--dubai-border);
+}
+
+.category-header-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.category-header-tag {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--dubai-blue);
+  margin-bottom: 0.3rem;
+}
+
+.category-header-title {
+  font-family: var(--font-serif, 'Playfair Display', serif);
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: var(--dubai-navy);
+  margin: 0;
+  line-height: 1.2;
+}
+
+.category-meta-right {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.category-count-badge {
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--dubai-slate);
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  padding: 0.3rem 0.85rem;
+  border-radius: 9999px;
+  white-space: nowrap;
+}
+
+.mobile-swipe-hint {
+  display: none;
+}
+
+.spots-track,
 .spots-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -656,6 +719,7 @@ body {
 
 /* 7. Responsive Breakpoints */
 @media (max-width: 1024px) {
+  .spots-track,
   .spots-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
@@ -668,7 +732,7 @@ body {
   }
 
   .dubai-hero {
-    padding: 3.5rem 1rem 2.8rem;
+    padding: 3.2rem 1rem 2.6rem;
   }
 
   .dubai-hero-title {
@@ -686,9 +750,9 @@ body {
     display: none;
   }
 
-  .spots-grid {
-    grid-template-columns: 1fr;
-    gap: 1.25rem;
+  .filter-bar-wrapper {
+    top: 0.75rem;
+    margin-bottom: 2rem;
   }
 
   .filter-bar {
@@ -697,9 +761,84 @@ body {
     padding: 0.4rem;
   }
 
+  .filter-btn {
+    padding: 0.45rem 0.95rem;
+    font-size: 0.78rem;
+  }
+
+  /* Category Section on Mobile */
+  .category-section {
+    margin-bottom: 2.8rem;
+  }
+
+  .category-header {
+    margin-bottom: 1.1rem;
+    padding-bottom: 0.7rem;
+  }
+
+  .category-header-title {
+    font-size: 1.35rem;
+  }
+
+  .mobile-swipe-hint {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--dubai-blue);
+    background: rgba(37, 99, 235, 0.08);
+    padding: 0.25rem 0.65rem;
+    border-radius: 9999px;
+  }
+
+  .category-count-badge {
+    display: none; /* Hide badge on tiny screens to give room for swipe hint */
+  }
+
+  /* App-Style Horizontal Swipe Rail on Mobile */
+  .spots-track {
+    display: flex !important;
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 1.1rem;
+    padding: 0.4rem 1.2rem 1.4rem;
+    margin: 0 -1.2rem;
+    scrollbar-width: none;
+  }
+
+  .spots-track::-webkit-scrollbar {
+    display: none;
+  }
+
+  .spots-track .spot-card {
+    flex: 0 0 82%;
+    max-width: 82%;
+    scroll-snap-align: start;
+    box-shadow: 0 8px 24px rgba(7, 26, 43, 0.07);
+    margin-bottom: 0;
+  }
+
+  .spot-img-wrap {
+    height: 195px;
+  }
+
+  .spot-body {
+    padding: 1.3rem 1.2rem;
+  }
+
+  .spot-title {
+    font-size: 1.18rem;
+  }
+
   .video-modal-card,
   .detail-modal-card {
     max-width: 100%;
     border-radius: 16px;
   }
 }
+
