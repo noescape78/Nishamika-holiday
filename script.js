@@ -33,6 +33,18 @@ document.addEventListener('DOMContentLoaded', () => {
   if (drawerCloseBtn) {
     drawerCloseBtn.addEventListener('click', closeMobileMenu);
   }
+  if (mobileDrawer) {
+    mobileDrawer.addEventListener('click', (e) => {
+      if (e.target === mobileDrawer) {
+        closeMobileMenu();
+      }
+    });
+  }
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && mobileDrawer && mobileDrawer.classList.contains('open')) {
+      closeMobileMenu();
+    }
+  });
   mobileNavLinks.forEach(link => {
     link.addEventListener('click', closeMobileMenu);
   });
